@@ -1,0 +1,16 @@
+{{ if not .Site.Params.incognito }}
+<header class="masthead">
+    <div class="title">
+        <a href="{{ .Site.BaseURL }}" title="Home"><img src="/images/coz-logo-small.png" style="width: 240px;" alt="City of Zion Logo" /></a><br>
+    </div>
+
+    <div class="navigation">
+        <span class="nav-action"><a href="/current/">Current</a></span>
+        <span class="nav-action"><a href="/blog/archive/">Blog</a></span>
+        <span class="nav-action"><a href="/projects/">Projects</a></span>
+        <span class="nav-action"><a href="/about/">About</a></span>
+        <!-- <span class="nav-action"><a style="color:#FF6600;" href="/post/index.xml"><i class="fa fa-rss"></i></a></span> -->
+        <!-- <span class="nav-action"><a href="/contact">Contact</a></span> -->
+    </div>
+</header>
+{{ end }}
