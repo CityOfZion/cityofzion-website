@@ -1,13 +1,26 @@
+@font-face {
+    font-family: "orbitron";
+    src:
+    url("/fonts/orbitron-bold-webfont.woff") format("woff"),
+    url("/fonts/orbitron-bold-webfont.woff2") format("woff2");
+}
+
 body, html {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
-    background: #2b2b5e;
     font-weight: 400;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     font-family: Helvetica Neue,arial,sans-serif;
+    min-width: 600px;
+    font-size: 18px;
+}
+
+body {
+    background: #212146 url(/images/page-bg-small.png) top repeat;
+    background-size: cover;
 }
 
 a, a:link {
@@ -16,19 +29,37 @@ a, a:link {
 
 .masthead {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 40px;
-    align-items: center;
 }
 
 .masthead .navigation {
     flex-grow: 1;
     text-align: right;
+    font-family: "orbitron", sans-serif;
+    font-size:16px;
 }
 
-#app {
+.masthead .navigation span {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.masthead .navigation a {
+    color: #c5c5c5;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.masthead .navigation a:hover {
+    color: white;
+}
+
+
+/* #app {
     box-shadow: inset 0 0 100px rgba(25,24,49,.1);
     background: #212146 url(/images/page-bg.jpg) top no-repeat;
     background-size: cover;
@@ -38,4 +69,70 @@ a, a:link {
     padding: 20px;
     margin-left: 20px;
     margin-right: 20px;
+} */
+
+.coz-font {
+    font-family: "orbitron";
+}
+
+.vspace {
+    margin-top: 100px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#home-content {
+    width: 740px;
+    min-width: 480px;
+    margin-top: 100px;
+}
+
+#home-content h1,
+#home-content h2,
+#home-content h3 {
+    font-family: "orbitron";
+}
+
+#home-content h1 {
+    font-size: 64px;
+    letter-spacing: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#home-content h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    background: transparent url("/images/coz-icon-white.png") top 4px left no-repeat;
+    background-size: 44px;
+    padding-left: 60px;
+}
+
+#home-content .tagline-wrapper {
+    overflow: hidden;
+    padding-right: 12px;
+}
+
+#home-content .tagline {
+    padding: 0 15px 0 30px;
+    margin: 0 0 0 -15px;
+    transform: skew(-15deg);
+    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    overflow: hidden;
+    position: relative;
+    text-shadow: 0 1px #2f53cd;
+    width: 70%;
+}
+
+#home-content .tagline-content {
+    padding: 6px 0 4px;
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .75px;
 }
