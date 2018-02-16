@@ -154,3 +154,35 @@ a, a:link {
     text-transform: uppercase;
     margin-top: 10px;
 }
+
+/**
+ * Governance
+ */
+#home-content .governance-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#home-content .governance-container > div {
+    margin: 40px 10px;
+    width: 280px;
+    font-size: 16px;
+    border-left: 3px solid #4598ff;
+    padding-left:10px;
+}
+
+#home-content .governance-container > div .title {
+    font-family: "orbitron";
+    vertical-align: top;
+}
+
+#home-content .governance-container > div .title .no {
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#home-content .governance-container > div .title .number {
+    font-size:60px;
+    padding-top: -10px;
+}
