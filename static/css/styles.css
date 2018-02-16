@@ -24,7 +24,7 @@ body {
 }
 
 a, a:link {
-    color: #4598ff;
+    color: #73b1ff;
 }
 
 .masthead {
@@ -58,19 +58,6 @@ a, a:link {
     color: white;
 }
 
-
-/* #app {
-    box-shadow: inset 0 0 100px rgba(25,24,49,.1);
-    background: #212146 url(/images/page-bg.jpg) top no-repeat;
-    background-size: cover;
-    padding-top: 20px;
-    min-width: 280px;
-    min-height: 1000px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-} */
-
 .coz-font {
     font-family: "orbitron";
 }
@@ -79,14 +66,19 @@ a, a:link {
     margin-top: 100px;
 }
 
+.vspace2 {
+    margin-top: 200px;
+}
+
 #container {
     display: flex;
     justify-content: center;
+    padding: 20px 40px;
 }
 
 #home-content {
-    width: 740px;
-    min-width: 480px;
+    max-width: 940px;
+    /* min-width: 480px; */
     margin-top: 100px;
 }
 
@@ -110,6 +102,7 @@ a, a:link {
     background: transparent url("/images/coz-icon-white.png") top 4px left no-repeat;
     background-size: 44px;
     padding-left: 60px;
+    margin-bottom: 16px;
 }
 
 #home-content .tagline-wrapper {
@@ -135,4 +128,29 @@ a, a:link {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: .75px;
+}
+
+#home-content .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#home-content .projects-container .project {
+    margin: 40px 10px;
+    width: 280px;
+    font-size: 16px;
+}
+
+#home-content .projects-container .project img {
+    height: 180px;
+    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    padding-bottom: 3px;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+#home-content .projects-container .project .title {
+    font-family: "orbitron";
+    text-transform: uppercase;
+    margin-top: 10px;
 }
