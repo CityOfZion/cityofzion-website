@@ -70,7 +70,10 @@ a, a:link {
     margin-top: 200px;
 }
 
-#container {
+/**
+ * Homepage
+ */
+#home-container {
     display: flex;
     justify-content: center;
     padding: 20px 40px;
@@ -78,7 +81,7 @@ a, a:link {
 
 #home-content {
     max-width: 940px;
-    /* min-width: 480px; */
+    min-width: 480px;
     margin-top: 100px;
 }
 
@@ -219,4 +222,13 @@ a, a:link {
     margin-top: 14px;
     margin-bottom: 2px;
     font-size: 22px;
+}
+
+
+/**
+ * All other pages
+ */
+#container {
+    margin-top: 60px;
+    padding: 20px 40px;
 }
