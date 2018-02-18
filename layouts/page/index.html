@@ -1,5 +1,16 @@
 {{ partial "header.html" . }}
-{{ partial "navbar.html" . }}
+<header class="masthead">
+    <div class="title">
+        <a href="{{ .Site.BaseURL }}" title="Home"><img src="/images/coz-logo-small.png" style="width: 240px;" alt="City of Zion Logo" /></a><br>
+    </div>
+
+    <div class="navigation">
+        <span class="nav-action"><a href="#welcome">Welcome</a></span>
+        <span class="nav-action"><a href="#projects">Projects</a></span>
+        <span class="nav-action"><a href="#governance">Governance</a></span>
+        <span class="nav-action"><a href="#resources">Resources</a></span>
+    </div>
+</header>
 
 <div id="home-container">
     <div id="home-content">

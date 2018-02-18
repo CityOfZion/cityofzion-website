@@ -1,10 +1,3 @@
-@font-face {
-    font-family: "orbitron";
-    src:
-    url("/fonts/orbitron-bold-webfont.woff") format("woff"),
-    url("/fonts/orbitron-bold-webfont.woff2") format("woff2");
-}
-
 body, html {
     height: 100%;
     width: 100%;
@@ -13,7 +6,7 @@ body, html {
     font-weight: 400;
     color: #fff;
     -webkit-font-smoothing: antialiased;
-    font-family: Helvetica Neue,arial,sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
     min-width: 600px;
     font-size: 18px;
 }
@@ -156,6 +149,7 @@ a, a:link {
     font-family: "orbitron";
     text-transform: uppercase;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 /**
