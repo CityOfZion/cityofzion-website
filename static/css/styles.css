@@ -20,37 +20,6 @@ a, a:link {
     color: #73b1ff;
 }
 
-.masthead {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.masthead .navigation {
-    flex-grow: 1;
-    text-align: right;
-    font-family: "orbitron", sans-serif;
-    font-size:16px;
-}
-
-.masthead .navigation span {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.masthead .navigation a {
-    color: #c5c5c5;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.masthead .navigation a:hover {
-    color: white;
-}
-
 .coz-font {
     font-family: "orbitron";
 }
@@ -61,6 +30,42 @@ a, a:link {
 
 .vspace2 {
     margin-top: 200px;
+}
+
+/**
+ * Homepage Nav Header
+ */
+.masthead {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.masthead .navigation {
+    flex-grow: 1;
+    text-align: right;
+    font-family: "orbitron", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.masthead .navigation span {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.masthead .navigation a {
+    color: #c5c5c5;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.masthead .navigation a:hover {
+    color: white;
 }
 
 /**
@@ -198,6 +203,7 @@ a, a:link {
     width: 280px;
     font-size: 14px;
     font-family: "orbitron";
+    font-weight: 500;
 }
 
 #home-content .resources-container > div a {
@@ -215,9 +221,8 @@ a, a:link {
     text-transform: uppercase;
     margin-top: 14px;
     margin-bottom: 2px;
-    font-size: 22px;
+    font-size: 20px;
 }
-
 
 /**
  * All other pages
