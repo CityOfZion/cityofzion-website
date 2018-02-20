@@ -6,14 +6,8 @@ Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static we
 
 [Install Hugo](https://gohugo.io/getting-started/installing/):
 
-    # OSX
-    brew install hugo
-
-    # Snap package
-    snap install hugo
-
-    # Debian/Ubuntu
-    sudo apt-get install hugo
+* On OSX with [homebrew](https://brew.sh/): `brew install hugo`
+* Or download a release from here: https://github.com/gohugoio/hugo/releases
 
 
 ## Developing the website
