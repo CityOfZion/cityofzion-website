@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/CityOfZion/cityofzion-website.svg?branch=master)](https://travis-ci.org/CityOfZion/cityofzion-website)
+
 The cityofzion.io website source: https://cityofzion.io
 
 Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator.
