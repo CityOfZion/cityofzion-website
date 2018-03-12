@@ -1,0 +1,22 @@
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+before_install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.37.1_Linux-64bit.deb
+
+# Build the website
+script:
+  - rm -rf public || exit 0
+  - hugo
+
+# # Deploy to GitHub pages
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   local_dir: public
+#   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+#   on:
+#     branch: master
