@@ -1,4 +1,4 @@
-The cityofzion.io website source.
+The cityofzion.io website source: https://cityofzion.io
 
 Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator.
 
