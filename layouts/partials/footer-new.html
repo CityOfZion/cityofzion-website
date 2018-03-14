@@ -39,9 +39,15 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    {{ if .Params.Enable_Bootstrap_JS | or .Params.Enable_jQuery }}
     <script src="/assets/vendor-js/jquery-3.3.1.min.js"></script>
+    {{ end }}
+
+    {{ if .Params.Enable_Bootstrap_JS }}
     <script src="/assets/vendor-js/popper.min.js"></script>
     <script src="/assets/vendor-js/bootstrap.min.js"></script>
+    {{ end }}
+    
     <script src="/assets/vendor-js/modernizr-custom.js"></script>
     <!-- Load custom javascript -->
 	{{ range .Params.javascripts -}}	    
