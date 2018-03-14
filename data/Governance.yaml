@@ -1,0 +1,26 @@
+- number: 1
+  rule: "There will be a council always composed of 9 members. They are the Council team in our organization."
+- number: 2
+  rule: "There will be a high council composed of 4 members of the council. They are the Maintainers of the Council team."
+- number: 3
+  rule: "Any member of CoZ can create and collaborate on projects."
+- number: 4
+  rule: "There will be a weekly report delivered to NEO by the high council via a PGP signed email and correspondent pull request on GitHub."
+- number: 5
+  rule: "In case of any support from NEO as reward or bounty, the funds will initially be held by a trusted third party in a wallet for distribution."
+  subtitle: "Wallet Address:"
+  value: "AXSoNQEKjmqPBNPg5cNrHyWivfjok3Vj9D"
+- number: 6
+  rule: "After 1 September 2017, all CoZ funds will be held in a multi-sig wallet requiring a majority of the high council to unlock funding."
+- number: 7
+  rule: "Rewards distribution will be voted on by project before being sent. There must be a majority agreement of all 9 council members."
+- number: 8
+  rule: "All decisions not explicitly differentiated in this list will be voted upon as in item 7."
+- number: 9
+  rule: "Item 7 voting polls of the council will run for 1 week on the #council Discord channel and after closing will be published in the #develop channel."
+- number: 10
+  rule: "The high council will be voted upon each quarter, synchronizing with the quarters of the year. The first election will be on 1 October 2017. The newly elected high council can propose changes to these rules during the first week after the election. Changes will be voted upon as in item 7."
+- number: 11
+  rule: "Any member of the council or high council is free to forfeit their position at any time. When this happens, an election will take place and a majority of council members must decide upon a replacement."
+- number: 12
+  rule: "Any member of the council that does not vote on polls for more than 2 months will automatically forfeit their position."
