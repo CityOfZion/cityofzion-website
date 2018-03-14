@@ -54,7 +54,7 @@
 	    <meta property="og:site_name" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 	    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
 	    {{ if .Description }}<meta property="og:description" content="{{ .Description }}" />{{ end }}
-	    <meta property="og:url" content="http://http://coztmp.neodius.io/" />
+	    <meta property="og:url" content="{{ .Permalink }}" />
 	    <meta property="og:type" content="website" />
         <!-- Page image -->
         {{ if .Params.image -}}
