@@ -78,7 +78,7 @@ a.card {
 	Main information
 */
 body {
-	background: #212146 url("../images/website-images/background.jpg") top repeat;
+	background: #212146 url("/assets/images/website-images/background.jpg") top repeat;
     background-size: auto auto;
 	background-size: cover;
 	font-weight: 400;
@@ -283,5 +283,14 @@ footer a {
 	max-width: 100%;
 }
 
+
+/* Media Queries */
+@media (max-width: 767.98px) {
+	.welcome-jumbo {
+		margin-top: 0 !important;
+		padding-top: 10px !important;
+		padding-bottom: 0 !important;
+	}
+}
 
 
