@@ -1,0 +1,287 @@
+/*
+	Bootstrap element updates
+*/
+/*Headers*/
+h1 {
+    font-size: 64px;
+    letter-spacing: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: orbitron;
+    font-weight: 600;    
+}
+
+/*Navigation*/
+nav a {
+	color: #c5c5c5 !important;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.2s;	
+}
+
+nav a:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.navbar-brand img {
+	max-width: 240px
+}
+
+/* Links */
+a {
+	color: #73b1ff;
+	text-decoration: underline;	
+}
+
+
+/* card setup */
+.card{
+    border-radius: 0 !important;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    padding-bottom: 20px;
+}
+
+.card img {
+	border-radius: 0;
+}
+
+a.card {
+	text-decoration: none;
+	color: white;
+	position: relative;
+    font-size: 16px;
+}
+
+.card h3 {
+	font-family: orbitron;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 16px;
+	color: white;
+}
+
+/*
+	Main information
+*/
+body {
+	background: #212146 url("../images/background.jpg") top repeat;
+    background-size: auto auto;
+	background-size: cover;
+	font-weight: 400;
+	color: #fff;
+	font-family: source sans pro,sans-serif;
+	font-size: 18px;	
+}
+
+.coz-font {
+    font-family: orbitron;
+}
+
+
+/* SVG capability */
+.non-svg-image {
+	display:block;
+}
+.svg-image {
+	display: none;
+}
+
+.svg .svg-image {
+	display:block;
+}
+
+.svg .non-svg-image {
+	display: none;
+}
+
+a.grower:hover {
+	transform: scale(1.05);
+}
+
+a.grower {
+    transition: transform .1s;
+}
+
+
+/*Headers*/
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+    font-family: orbitron;	
+    font-weight: 600;     
+}
+h1 {
+    font-size: 64px;
+    letter-spacing: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+ 
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+/* body */
+.welcome-jumbo {
+	margin-top: 80px;
+}
+.welcome-title h1 {
+		font-weight: 600 !important;
+}
+.welcome-title h1 span {
+	font-size: 18px;
+	display: block;
+	letter-spacing: normal;
+	font-weight: 400;
+}
+
+.tagline-wrapper {
+    overflow: hidden;
+    padding-right: 12px;
+}
+
+.tagline {
+    padding: 0 15px 0 30px;
+    margin: 0 0 0 -15px;
+    transform: skew(-15deg);
+    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    overflow: hidden;
+    position: relative;
+    text-shadow: 0 1px #2f53cd;
+	max-width: 800px;
+}
+
+.tagline .tagline-content {
+    padding: 6px 0 4px;
+    -webkit-transform: skew(15deg);
+    transform: skew(15deg);
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: .75px;
+}
+
+
+h2.logolead {
+    background: transparent url("/assets/images/website-images/h2-logo.png") top 0px left no-repeat;
+    background-size: auto auto;
+    background-size: 44px;
+    padding-left: 60px;
+}
+
+.svg h2.logolead {
+    background-image: url("/assets/images/website-images/h2-logo.svg");
+}
+
+.h2-introduction {
+	margin-bottom: 40px;
+	display: block;
+}
+
+
+.coz-projects a span {
+	display: block;
+	background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+	height: 4px;
+}
+
+/* Rule list */
+.rule-list div {
+	border-left: 3px solid #4598ff;
+	margin-bottom: 80px;
+	padding-left: 15px;
+}
+
+.rule-list h3 {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.rule-list h3 span {
+	font-size: 60px;
+}
+
+.rule-list p {
+	font-size: 16px;
+}
+
+
+
+/* Resource list  */
+
+.resource-list > div {
+	margin-bottom: 60px;
+}
+.resource-list a {
+	text-decoration: none;
+	color: white;
+	display: block;
+
+}
+.resource-list a div.icon {
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	background-color: green;
+	float: left;
+	margin-right: 10px;
+	font-size: 50px;
+	text-align: center;	
+	background-image: linear-gradient(45deg,#2a43c1,#4598ff);
+}
+
+.resource-list h3 {
+	font-size: 20px;	
+}
+
+.resource-list h3 span {
+	font-size: 14px;
+	font-weight: 500;
+	display: block;
+	text-transform: none;
+}
+
+/* footer */
+footer {
+	font-size: 16px;
+}
+
+footer h5 {
+	color: #212146 ;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+.logo-image img {
+	max-width: 100%;
+}
+
+
+

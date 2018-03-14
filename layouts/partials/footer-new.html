@@ -1,0 +1,52 @@
+    <footer class="py-5 bg-light text-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <div class="logo-image">
+                        <img src="/assets/images/website-images/coz-logo-inverted.png" class="non-svg-image" />
+                        <img src="/assets/images/website-images/coz-logo-inverted.svg" class="svg-image" />
+                    </div>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled text-small">                    
+                        <li><a class="text-muted" href="#welcome">Welcome</a></li>
+                        <li><a class="text-muted" href="#projects">Projects</a></li>
+                        <li><a class="text-muted" href="#governance">Governance</a></li>
+                        <li><a class="text-muted" href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.reddit.com/r/{{ .Site.Params.Reddit }}/">NEO Reddit</a></li>
+                        <li><a class="text-muted" href="https://discordapp.com/invite/{{ .Site.Params.Discord }}">Discord</a></li>
+                        <li><a class="text-muted" href="https://github.com/{{ .Site.Params.Github }}">Github</a></li>
+                        <li><a class="text-muted" href="https://www.facebook.com/{{ .Site.Params.Facebook }}">Facebook</a></li>
+                        <li><a class="text-muted" href="https://twitter.com/{{ .Site.Params.Twitter }}">Twitter</a></li>
+                        <li><a class="text-muted" href="https://medium.com/{{ .Site.Params.Medium }}">Medium</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5> Our code is free and 100% MIT-licensed; even this website!
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Help</h5> If you feel you can improve on anything here, just send us a <a href="https://github.com/CityOfZion/cityofzion-website">pull request</a> ❤️
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/modernizr-custom.js"></script>
+    <!-- Load custom javascript -->
+	{{ range .Params.javascripts -}}	    
+    <!-- Load custom javascript -->
+    <script src="{{ . }}"></script>
+    {{ end }}    
+</body>
+</html>
