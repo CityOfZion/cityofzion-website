@@ -1,0 +1,15 @@
+{{ range $.Site.Data.Resources }}
+                    <div class="col-md-6 col-sm-6 col-lg-4">
+                        <a href="{{ .url }}" target="_blank" class="grower d-flex h-100">
+                            <div class="icon justify-content-center align-self-center">
+                                <i class="fab {{ .icon }}"></i>
+                            </div>
+                            <div class="justify-content-center align-self-center">
+                                <h3>
+								{{ .head }}
+								<span>{{ .subtitle }}</span>
+							</h3>
+                            </div>
+                        </a>
+                    </div>
+{{ end }}

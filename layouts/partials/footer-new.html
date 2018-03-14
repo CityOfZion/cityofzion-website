@@ -19,12 +19,9 @@
                 <div class="col-6 col-md">
                     <h5>Resources</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="https://www.reddit.com/r/{{ .Site.Params.Reddit }}/">NEO Reddit</a></li>
-                        <li><a class="text-muted" href="https://discordapp.com/invite/{{ .Site.Params.Discord }}">Discord</a></li>
-                        <li><a class="text-muted" href="https://github.com/{{ .Site.Params.Github }}">Github</a></li>
-                        <li><a class="text-muted" href="https://www.facebook.com/{{ .Site.Params.Facebook }}">Facebook</a></li>
-                        <li><a class="text-muted" href="https://twitter.com/{{ .Site.Params.Twitter }}">Twitter</a></li>
-                        <li><a class="text-muted" href="https://medium.com/{{ .Site.Params.Medium }}">Medium</a></li>
+						{{ range $.Site.Data.Resources }}	                    
+                        <li><a class="text-muted" href="{{ .url }}/">{{ .name}}</a></li>
+                        {{ end }}
                     </ul>
                 </div>
                 <div class="col-6 col-md">
