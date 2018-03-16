@@ -4,6 +4,7 @@ baseURL: "https://cityofzion.io/"
 pygmentsStyle: "monokai"
 pygmentsUseClasses: true
 MetaDataFormat: "yaml"
+  
 permalinks:
   post: /:year/:month/:title/
 
