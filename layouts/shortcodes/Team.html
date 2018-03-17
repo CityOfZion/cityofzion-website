@@ -1,0 +1,27 @@
+{{ $data := index .Site.Data.Team (.Get "Type") }}
+{{ range $data }}
+
+		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 team-member-wrapper">
+	            <span></span>
+            <div class="team-member card">
+
+	            <div class="image-holder" style="padding: 15px;">
+	                <img class="card-img-top" src="{{ .Image }}" alt="{{ .Name }}">
+                </div>
+                <div class="team-member-details">
+	                <div class="team-member-nickname">{{ .Nickname }}</div>
+	                <div class="team-member-name">{{ .Name }}</div>
+	                <div class="team-member-subtitle">{{ .Subtitle }}</div>
+                </div>
+                <div class="team-member-contact d-flex justify-content-between px-3">
+					{{ if .Github }}<div class=""><a href="http://www.github.com/{{ .Github }}"><i class="fab fa-github"></i></a></div>{{ end }}
+					{{ if .Linkedin }}<div class=""><a href="http://www.linkedin.com/in/{{ .Linkedin }}"><i class="fab fa-linkedin"></i></a></div>{{ end }}
+					{{ if .Twitter }}<div class=""><a href="http://www.twitter.com/{{ .Twitter }}"><i class="fab fa-twitter"></i></a></div>{{ end }}
+					{{ if .Discord }}<div class=""><a href="http://www.discord.com/{{ .Discord }}"><i class="fab fa-discord"></i></a></div>{{ end }}
+					{{ if .Website }}<div class=""><a href="{{ .Website }}"><i class="fa fa-globe"></i></a></div>{{ end }}
+                </div>
+            </div>
+        </div>
+                
+{{ end }}
+
