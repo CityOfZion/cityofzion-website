@@ -233,7 +233,6 @@ h2.logolead {
 
 
 /* Resource list  */
-
 .resource-list > div {
 	margin-bottom: 60px;
 }
@@ -264,6 +263,7 @@ h2.logolead {
 	font-weight: 500;
 	display: block;
 	text-transform: none;
+	
 }
 
 /* Team list */
@@ -272,9 +272,8 @@ h2.logolead {
 	display: block;
 	background-image: linear-gradient(90deg,#2a43c1,#4598ff);
 	height: 4px;
+	margin-right: 1px;
 }
-
-
 
 .team-list {
 	text-align: center;
@@ -298,6 +297,23 @@ h2.logolead {
 
 .team-list .team-member-wrapper {
 	margin-bottom: 30px;
+	visibility: hidden;
+}
+
+.team-member-role {
+	position: absolute;
+	background-color: red;
+	right: 0;
+	top: 20px;
+    background-image: linear-gradient(90deg,#2a43c1,#4598ff);
+    font-size: 14px;
+    color: white;
+    padding: 5px 15px 5px 8px;
+    font-weight: bold;
+    font-style: italic;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+	
 }
 
 

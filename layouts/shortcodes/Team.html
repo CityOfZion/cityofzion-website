@@ -1,12 +1,13 @@
-{{ $data := index .Site.Data.Team (.Get "Type") }}
-{{ range $data }}
+{{ range .Site.Data.Team }}
 
 		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 team-member-wrapper">
 	            <span></span>
             <div class="team-member card">
-
 	            <div class="image-holder" style="padding: 15px;">
 	                <img class="card-img-top" src="{{ .Image }}" alt="{{ .Name }}">
+                </div>
+                <div class="team-member-role">
+	                {{ .Role }}
                 </div>
                 <div class="team-member-details">
 	                <div class="team-member-nickname">{{ .Nickname }}</div>
@@ -22,6 +23,6 @@
                 </div>
             </div>
         </div>
-                
+        
 {{ end }}
 
