@@ -48,7 +48,7 @@
     Twitter: brianlenz
     Discord: 'Brian Lenz#7538'
     Website: ''
-    CountryCode: US
+    CountryCode: USA
     City: 'Seattle, WA'
 -
     Name: 'Silas Albrecht'
@@ -164,9 +164,9 @@
     Linkedin: joestewart71
     Twitter: hal_0x2328
     Discord: 'hal0x2328#2328'
-    Website: ''
-    CountryCode: ''
-    City: ''
+    Website: 'https://splyse.tech/'
+    CountryCode: USA
+    City: 'Myrtle Beach, SC'
 -
     Name: 'Nick Fujita'
     Nickname: fujita
@@ -271,3 +271,16 @@
     Website: 'https://dean.press'
     CountryCode: NL
     City: Amsterdam
+-
+    Name: 'Jason L Perry'
+    Nickname: ambethia
+    Subtitle: 'CoZ Developer and author neo-ruby'
+    Role: Developer
+    Image: JasonLPerry.png
+    Github: ambethia
+    Linkedin: ''
+    Twitter: ambethia
+    Discord: 'ambethia#3722'
+    Website: 'https://github.com/ambethia/'
+    CountryCode: USA
+    City: 'St Petersburg, FL'
