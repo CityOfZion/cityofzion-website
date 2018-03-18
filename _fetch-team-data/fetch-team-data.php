@@ -16,6 +16,7 @@ require __DIR__ . '/vendor/autoload.php';
 define("TEAM_DATA_FILE", __DIR__."/../data/Team.yaml");
 define("SPREADSHEET_ID","1meX5gF-klNx5NHVAeoiAllOlAaO0uDzdNP0C7ezsvg0");
 define("IMAGE_FOLDER", __DIR__."/../static/assets/images/team-images/");
+define("API_KEY_FILE", "./google-api-key.json");
 
 
 
@@ -24,7 +25,7 @@ $client = new \Google_Client();
 $client->setApplicationName('My PHP App');
 $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
 $client->setAccessType('offline');
-$client->setAuthConfig(json_decode(file_get_contents("./api-key.json"), true));	
+$client->setAuthConfig(json_decode(file_get_contents(API_KEY_FILE), true));	
 
 //open the sheet
 $sheets = new \Google_Service_Sheets($client);
