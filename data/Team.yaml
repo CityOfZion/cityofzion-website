@@ -22,7 +22,7 @@
     Twitter: ThomasLobker
     Discord: 'Thomas Lobker#8351'
     Website: ''
-    CountryCode: ''
+    CountryCode: NL
     City: ''
 -
     Name: 'Anthony De Meulemeester'
@@ -35,7 +35,7 @@
     Twitter: anthdm
     Discord: anthdm
     Website: ''
-    CountryCode: ''
+    CountryCode: BE
     City: ''
 -
     Name: 'Brian Lenz'
@@ -48,7 +48,7 @@
     Twitter: brianlenz
     Discord: 'Brian Lenz#7538'
     Website: ''
-    CountryCode: USA
+    CountryCode: US
     City: 'Seattle, WA'
 -
     Name: 'Silas Albrecht'
@@ -74,8 +74,8 @@
     Twitter: charlierevett
     Discord: 'revett#1090'
     Website: ''
-    CountryCode: ''
-    City: ''
+    CountryCode: UK
+    City: London
 -
     Name: 'Austin Hinderer'
     Nickname: zeshon
@@ -87,8 +87,8 @@
     Twitter: ''
     Discord: ''
     Website: ''
-    CountryCode: ''
-    City: ''
+    CountryCode: US
+    City: ' Seattle, WA'
 -
     Name: 'Fernando Díaz Toledano'
     Nickname: shargon
@@ -100,7 +100,7 @@
     Twitter: ShargonXL
     Discord: 'Shargon#1912'
     Website: ''
-    CountryCode: ''
+    CountryCode: ES
     City: ''
 -
     Name: 'Matt Huggins'
@@ -113,7 +113,7 @@
     Twitter: mhuggins
     Discord: 'mhuggins#3797'
     Website: ''
-    CountryCode: USA
+    CountryCode: US
     City: 'Round Rock, TX'
 -
     Name: 'Alex Guba'
@@ -125,9 +125,9 @@
     Linkedin: alex-guba-a057173
     Twitter: gubanotorious
     Discord: 'gubanotorious#3383'
-    Website: ''
-    CountryCode: ''
-    City: ''
+    Website: 'http://www.treatail.com'
+    CountryCode: US
+    City: 'Cleveland, OH'
 -
     Name: Steffel
     Nickname: Stef
@@ -152,8 +152,8 @@
     Twitter: ''
     Discord: 'Nikolaj-K#6603'
     Website: 'https://axiomsofchoice.org/'
-    CountryCode: ''
-    City: ''
+    CountryCode: AT
+    City: Vienna
 -
     Name: 'Joe Stewart'
     Nickname: hal0x2328
@@ -165,7 +165,7 @@
     Twitter: hal_0x2328
     Discord: 'hal0x2328#2328'
     Website: 'https://splyse.tech/'
-    CountryCode: USA
+    CountryCode: US
     City: 'Myrtle Beach, SC'
 -
     Name: 'Nick Fujita'
@@ -178,8 +178,8 @@
     Twitter: nick_fujita
     Discord: 'fujita#7297'
     Website: 'http://nickfujita.com/'
-    CountryCode: ''
-    City: ''
+    CountryCode: JP
+    City: Tokyo
 -
     Name: 'Yak Jun Xiang'
     Nickname: snowypowers
@@ -191,7 +191,7 @@
     Twitter: ''
     Discord: 'snowypowers#0097'
     Website: ''
-    CountryCode: ''
+    CountryCode: SG
     City: ''
 -
     Name: 'Chris Hager'
@@ -204,8 +204,8 @@
     Twitter: metachris
     Discord: 'metachris#2573'
     Website: 'https://www.metachris.com'
-    CountryCode: ''
-    City: ''
+    CountryCode: AT
+    City: Vienna
 -
     Name: 'Sérgio Flores'
     Nickname: relfos
@@ -217,7 +217,7 @@
     Twitter: onihunters
     Discord: 'relfos#0863'
     Website: 'http://lunarlabs.pt/'
-    CountryCode: ''
+    CountryCode: PT
     City: ''
 -
     Name: 'Fábio César Canesin'
@@ -230,8 +230,8 @@
     Twitter: canesin
     Discord: '@canesin#5067 '
     Website: ''
-    CountryCode: ''
-    City: ''
+    CountryCode: US
+    City: 'Camebridge, MA'
 -
     Name: 'Jaime Kindelan'
     Nickname: belane
@@ -243,7 +243,7 @@
     Twitter: rbelane
     Discord: 'Belane#1011'
     Website: ''
-    CountryCode: ''
+    CountryCode: ES
     City: ''
 -
     Name: 'Thomas Saunders'
@@ -282,5 +282,5 @@
     Twitter: ambethia
     Discord: 'ambethia#3722'
     Website: 'https://github.com/ambethia/'
-    CountryCode: USA
+    CountryCode: US
     City: 'St Petersburg, FL'
