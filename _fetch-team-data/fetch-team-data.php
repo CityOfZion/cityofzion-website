@@ -1,5 +1,14 @@
 #!/usr/bin/php
 <?php
+
+
+//check if we can skip images
+$dataOnly = false;	
+if (isset($argv[1])) {
+	if ($argv[1] == "--data-only")
+		$dataOnly = true;
+}
+
 //change dir
 chdir(__DIR__);
 //we need Yaml for it
@@ -69,14 +78,16 @@ foreach ($members as $row) {
 	//create image filename
 	$imageFilename = $s->slugify(ucwords($yaml_data['Name']),"").".png"; 
 
-	//writing to console
-	echo " - Storing image...";
+	if (!$dataOnly) {
+		//writing to console
+		echo " - Storing image...";
+		
+		//setup image manipulator
+		$i = new \claviska\SimpleImage($yaml_data['Image']);
+		$i->thumbnail(320, 320, "center")
+		  ->toFile(IMAGE_FOLDER."/".$imageFilename, 'image/png');
+	}
 	
-	//setup image manipulator
-	$i = new \claviska\SimpleImage($yaml_data['Image']);
-	$i->thumbnail(320, 320, "center")
-	  ->toFile(IMAGE_FOLDER."/".$imageFilename, 'image/png');
-
 	//change the image name
 	$yaml_data['Image'] = $imageFilename;
 	
