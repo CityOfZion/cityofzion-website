@@ -1,3 +1,6 @@
 .DS_Store
 *.swp
 /public/
+/_fetch-team-data/google-api-key.json
+/_fetch-team-data/vendor/
+/_fetch-team-data/composer.lock
