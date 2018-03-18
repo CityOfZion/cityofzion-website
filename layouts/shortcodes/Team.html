@@ -1,7 +1,7 @@
 {{ range .Site.Data.Team }}
 
 		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 team-member-wrapper">
-	            <span></span>
+            <span class="lead-graphic"></span>
             <div class="team-member card">
 	            <div class="image-holder" style="padding: 15px;">
 	                <img class="card-img-top" src="/assets/images/team-images/{{ .Image }}" alt="{{ .Name }}">
@@ -10,7 +10,7 @@
 	                {{ .Role }}
                 </div>
                 <div class="team-member-details">
-	                <div class="team-member-nickname">{{ .Nickname }}</div>
+	                <div class="team-member-nickname">{{ .Nickname }} {{ if .CountryCode }}<span title="{{ .CountryCode | lower}}" class="flag-icon flag-icon-{{ .CountryCode | lower}}"></span>{{ end }}</div>
 	                <div class="team-member-name">{{ .Name }}</div>
 	                <div class="team-member-subtitle">{{ .Subtitle }}</div>
                 </div>
