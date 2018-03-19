@@ -284,3 +284,16 @@
     Website: 'https://github.com/ambethia/'
     CountryCode: US
     City: 'St Petersburg, FL'
+-
+    Name: 'Dean Jeffs'
+    Nickname: dean
+    Subtitle: 'NEO News Today founder'
+    Role: Contributor
+    Image: DeanJeffs.png
+    Github: ''
+    Linkedin: deanjeffs
+    Twitter: neonewstoday
+    Discord: 'dean#5746'
+    Website: 'https://neonewstoday.com'
+    CountryCode: AU
+    City: 'Sydney, NSW'
