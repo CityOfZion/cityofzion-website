@@ -24,13 +24,23 @@ Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static we
 7. Save the as "./google-api-key/google-api-key.json"
 
 
+## To only retrieve new team data
+```bash
+gulp retrieveData
+```
+
 ## Developing the website
-
 Start development mode (with hot reloading):
-
-    hugo server -D
-
+```
+hugo server -D
+```
 Then you can visit the generated site at http://localhost:1313
 
 ## Deployment
-To produce a production build just run `gulp build`.
+To produce a production build just run 
+```bash
+gulp build
+```
+
+It will now export a build to the public folder
+
