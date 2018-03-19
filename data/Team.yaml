@@ -26,7 +26,7 @@
     name: 'Anthony De Meulemeester'
     nickname: anthdm
     subtitle: 'Maintainer of neo-go'
-    role: Developer
+    role: Maintainer
     image: anthonydemeulemeester.png
     github: anthdm
     linkedin: 'Anthony De Meulemeester'
@@ -58,7 +58,7 @@
     name: 'Charlie Revett'
     nickname: revett
     subtitle: 'Core CoZ Developer, NeoAuth Creator'
-    role: Developer
+    role: Maintainer
     image: charlierevett.png
     github: revett
     linkedin: cdrev
@@ -163,7 +163,7 @@
     name: 'Yak Jun Xiang'
     nickname: snowypowers
     subtitle: 'Maintainer of neon-js'
-    role: Developer
+    role: Maintainer
     image: yakjunxiang.png
     github: snowypowers
     linkedin: yakjunxiang
@@ -172,8 +172,8 @@
 -
     name: 'Chris Hager'
     nickname: metachris
-    subtitle: 'Maintainer of neo-python & Developer'
-    role: Developer
+    subtitle: 'neo-python & more'
+    role: Maintainer
     image: chrishager.png
     github: metachris
     linkedin: metachris
@@ -204,7 +204,7 @@
     linkedin: canesin
     twitter: canesin
     discord: '@canesin#5067 '
-    countrycode: US
+    countrycode: BR
     city: 'Camebridge, MA'
 -
     name: 'Jaime Kindelan'
