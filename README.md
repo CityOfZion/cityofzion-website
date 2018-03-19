@@ -4,6 +4,7 @@ The cityofzion.io website source: https://cityofzion.io
 
 Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator.
 
+
 ## Getting started
 
 **[Install Hugo](https://gohugo.io/getting-started/installing/):**
@@ -11,10 +12,34 @@ Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static we
 * On OSX with [homebrew](https://brew.sh/): `brew install hugo`
 * Or download a release from here: https://github.com/gohugoio/hugo/releases
 
-**[Install nodeJS](https://nodejs.org/en/download/)**
-* Run `npm install`
+This setup needs at least Hugo version 0.37.1.
 
-**Get an API key for Google Docs**
+
+### Development
+
+Start development mode (with hot reloading):
+
+```
+hugo server -D
+```
+
+Then you can visit the generated site at http://localhost:1313. As soon as source
+files change, hugo builds and reloads the page.
+
+
+### Production builds and Gulp tasks
+
+There are several Node.js gulp tasks. For instance, to produce minified production builds,
+just run `gulp build`. It will now export a build to the public folder.
+
+* Install [Node.js](https://nodejs.org/en/download/)
+* Run `npm install` (or `yarn`)
+
+
+### Retrieving team yaml files from Google docs
+
+Get an API key for Google Docs:
+
 1. Create project on https://console.developers.google.com/apis/dashboard.
 2. Click Enable APIs and enable the Google Sheets API
 3. Go to Credentials, then click Create credentials, and select Service account key
@@ -24,23 +49,8 @@ Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static we
 7. Save the as "./google-api-key/google-api-key.json"
 
 
-## To only retrieve new team data
+Retrieve new team data:
+
 ```bash
 gulp retrieveData
 ```
-
-## Developing the website
-Start development mode (with hot reloading):
-```
-hugo server -D
-```
-Then you can visit the generated site at http://localhost:1313
-
-## Deployment
-To produce a production build just run 
-```bash
-gulp build
-```
-
-It will now export a build to the public folder
-
