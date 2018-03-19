@@ -6,15 +6,21 @@ module.exports = function(grunt) {
         // get the configuration info from package.json file
         // this way we can use things like name and version (pkg.name)
         pkg: grunt.file.readJSON('package.json'),
-
+	
 		shell: {
 			options: {
 				stderr: false
 			},
-			ClearFolder: 'rm -rf ./public',
-			RunHugo: 'hugo'
+			ClearFolder: {
+				command: 'rm -rf ./public'
+			},
+			RunHugo: {
+				command: 'hugo'
+			},
+			HugoServer: {
+				command: 'hugo server -D'
+			}			
 		},
-		
         // all of our configuration goes here
         uglify: {
 			UglifyJS : {
@@ -49,11 +55,15 @@ module.exports = function(grunt) {
 		      ext: '.css'
 		    }]
 		  }
-		}        
+		},
+		   
     });
 
-    // log something
-    grunt.log.write('Building the CityOfZion.io website\n');
+	grunt.registerMultiTask('processSpreadsheet', 'Log stuff.', function() {
+	   grunt.log.writeln(this);
+	   
+	});
+
 
 	//load shell tasks
     grunt.loadNpmTasks('grunt-shell');
@@ -68,6 +78,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Default task(s).
-    grunt.registerTask('default', ['shell','uglify','prettify','cssmin']);
+    grunt.registerTask('build', ['shell:ClearFolder','shell:RunHugo','uglify','prettify','cssmin']);
+
+    // Default task(s).
+    grunt.registerTask('server', ['shell:HugoServer']);
 
 };
