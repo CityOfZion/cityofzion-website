@@ -3,23 +3,23 @@
 
 <head>
     <!--
-		   _____ _ _          ____   __ _______               _       
-		  / ____(_) |        / __ \ / _|___  (_)             (_)      
-		 | |     _| |_ _   _| |  | | |_   / / _  ___  _ __    _  ___  
-		 | |    | | __| | | | |  | |  _| / / | |/ _ \| '_ \  | |/ _ \ 
+		   _____ _ _          ____   __ _______               _
+		  / ____(_) |        / __ \ / _|___  (_)             (_)
+		 | |     _| |_ _   _| |  | | |_   / / _  ___  _ __    _  ___
+		 | |    | | __| | | | |  | |  _| / / | |/ _ \| '_ \  | |/ _ \
 		 | |____| | |_| |_| | |__| | |  / /__| | (_) | | | |_| | (_) |
-		  \_____|_|\__|\__, |\____/|_| /_____|_|\___/|_| |_(_)_|\___/ 
-		                __/ |                                         
-		               |___/                                          
+		  \_____|_|\__|\__, |\____/|_| /_____|_|\___/|_| |_(_)_|\___/
+		                __/ |
+		               |___/
 		 			www.cityofzion.io
-		 
+
 		 Welcome to the source, we're pretty proud of our website so
 		 make sure you check it out! May the force be with you, always.
-		 
+
 		 Got feedback on the code? Let us know at or fork us at Github!
-		 http://cityofzion.io/images/github.png	 
+		 http://cityofzion.io/images/github.png
 		 Enjoy your stay!
-		 		
+
 		-->
     <meta charset="utf-8" />
     <title>{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="/assets/vendor-css/fontawesome-all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/vendor-css/bootstrap.min.css">
     <!-- Google fonts that are required -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Source+Sans+Pro:400,400i,600,600i,700,700i"> {{ if not .Params.exclude_default_styles -}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Source+Sans+Pro:300,400,400i,600,600i,700,700i"> {{ if not .Params.exclude_default_styles -}}
     <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/css/cityofzion.css"> {{ end }}
     {{ range .Params.css -}}
@@ -91,7 +91,7 @@
     <meta property="og:type" content="website" /> {{ end }}
 </head>
 <body>
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-5">
+    <div id="header" class="masthead d-flex flex-column flex-md-row align-items-center p-3 px-5">
         <a href="#" class="navbar-brand my-0 mr-md-auto">
             <img src="/assets/images/website-images/coz-logo.png" class="non-svg-image" />
             <img src="/assets/images/website-images/coz-logo.svg" class="svg-image" />
