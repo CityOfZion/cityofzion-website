@@ -6,3 +6,4 @@
 /_fetch-team-data/composer.lock
 node_modules
 package-lock.json
+/google-api-key/google-api-key.json
