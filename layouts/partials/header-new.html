@@ -37,8 +37,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Source+Sans+Pro:300,400,400i,600,600i,700,700i"> {{ if not .Params.exclude_default_styles -}}
     <!-- Custom styles -->
     <link rel="stylesheet" href="/assets/css/cityofzion.css"> {{ end }}
+
+    <!-- Load custom css -->
     {{ range .Params.css -}}
-	<!-- Load custom javascript -->
 	<link rel="stylesheet" href="{{ . }}">
 	{{ end }}
 
@@ -101,6 +102,6 @@
             <a class="p-2 text-light coz-font scroll" href="/landing-new/#projects">Projects</a>
             <a class="p-2 text-light coz-font scroll" href="/landing-new/#governance">Governance</a>
             <a class="p-2 text-light coz-font scroll" href="/landing-new/#resources">Resources</a>
-            <a class="p-2 text-light coz-font scroll" href="/team/">Our team</a>
+            <!-- <a class="p-2 text-light coz-font scroll" href="/team/">Our team</a> -->
         </nav>
     </div>
