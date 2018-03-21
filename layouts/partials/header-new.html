@@ -73,10 +73,10 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     <!-- Page image -->
     {{ if .Params.image -}}
-    <link rel="image_src" href="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image:url" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" /> {{- end }}
+    <link rel="image_src" href="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image:url" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" /> {{- end }}
     <!-- OpenGraph and Twitter tags -->
     {{ if .IsPage -}}
     <meta property="og:type" content="article" /> {{ range .Params.tags }}
