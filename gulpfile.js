@@ -12,8 +12,7 @@ var	imagemin = require("gulp-imagemin"),
 	imageminGiflossy = require('imagemin-giflossy')
 	
 
-var GoogleSpreadsheet = require('google-spreadsheet-to-json'),
-	Jimp = require("jimp"),
+var Jimp = require("jimp"),
 	slugify = require('slugify'),
 	YAML = require('yamljs'),
 	fs = require('fs'),
@@ -22,7 +21,7 @@ var GoogleSpreadsheet = require('google-spreadsheet-to-json'),
 var team_image_folder = "./static/assets/images/team-images/";
 
 //generate an image
-gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish){ 
+gulp.task('generateTeamOpengraph', function(callbackFinish){ 
 
 	//new arary for images
 	team_images = [];
@@ -138,10 +137,9 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
 });
 
 //remove the Public folder
-gulp.task('removePublicFolder', ['generateTeamOpengraph'], function(){ 
-	gulp.src('app/tmp', {read: false})
-	        .pipe(clean());
-});
+gulp.task('removePublicFolder', ['generateTeamOpengraph'], shell.task([
+  'rm -rf ./public/'
+]));
 
 //running hugo
 gulp.task('runHugo', ['removePublicFolder'], shell.task([
