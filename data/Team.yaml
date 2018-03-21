@@ -2,8 +2,8 @@
     name: 'Benjamin J.J. de Bos'
     nickname: Woodehh
     subtitle: 'neo-php & CityOfZion.io developer'
-    role: Developer
-    image: benjaminjjdebos.png
+    role: Contributor
+    image: benjaminjjdebos.jpg
     github: Woodehh
     linkedin: benjamindebos
     twitter: banjiman
@@ -14,9 +14,9 @@
 -
     name: 'Thomas Lobker'
     nickname: MediaSmurf
-    subtitle: 'Contributor and community support for City of Zion'
+    subtitle: 'Contributor and community support'
     role: Contributor
-    image: thomaslobker.png
+    image: thomaslobker.jpg
     github: MediaServe
     linkedin: thomaslobker
     twitter: ThomasLobker
@@ -27,18 +27,19 @@
     nickname: anthdm
     subtitle: 'Maintainer of neo-go'
     role: Maintainer
-    image: anthonydemeulemeester.png
+    image: anthonydemeulemeester.jpg
     github: anthdm
     linkedin: 'Anthony De Meulemeester'
     twitter: anthdm
     discord: anthdm
     countrycode: BE
+    city: Antwerp
 -
     name: 'Brian Lenz'
     nickname: Brian
     subtitle: 'neo-python developer'
     role: Developer
-    image: brianlenz.png
+    image: brianlenz.jpg
     github: brianlenz
     linkedin: brianlenz
     twitter: brianlenz
@@ -50,7 +51,7 @@
     nickname: slipo
     subtitle: Developer
     role: Developer
-    image: silasalbrecht.png
+    image: silasalbrecht.jpg
     github: slipo
     twitter: slip_o
     discord: 'slipo#5889'
@@ -59,7 +60,7 @@
     nickname: revett
     subtitle: 'Core CoZ Developer, NeoAuth Creator'
     role: Maintainer
-    image: charlierevett.png
+    image: charlierevett.jpg
     github: revett
     linkedin: cdrev
     twitter: charlierevett
@@ -71,7 +72,7 @@
     nickname: zeshon
     subtitle: Developer
     role: Developer
-    image: austinhinderer.png
+    image: austinhinderer.jpg
     github: austinhinderer
     linkedin: austinhinderer
     countrycode: US
@@ -81,18 +82,19 @@
     nickname: shargon
     subtitle: 'Security Team'
     role: Security
-    image: fernandodiaztoledano.png
+    image: fernandodiaztoledano.jpg
     github: shargon
-    linkedin: fernando-d%C3%ADaz-toledano
+    linkedin: fernando-diaz-toledano
     twitter: ShargonXL
     discord: 'Shargon#1912'
+    website: 'https://red4sec.com'
     countrycode: ES
 -
     name: 'Matt Huggins'
     nickname: mhuggins
     subtitle: 'Neon Wallet Developer'
-    role: Developer
-    image: matthuggins.png
+    role: Maintainer
+    image: matthuggins.jpg
     github: mhuggins
     linkedin: huggie
     twitter: mhuggins
@@ -104,7 +106,7 @@
     nickname: gubanotorious
     subtitle: 'C#/.NET Developer'
     role: Contributor
-    image: alexguba.png
+    image: alexguba.jpg
     github: gubanotorious
     linkedin: alex-guba-a057173
     twitter: gubanotorious
@@ -117,7 +119,7 @@
     nickname: Stef
     subtitle: 'NeoChat dev'
     role: Contributor
-    image: steffel.png
+    image: steffel.jpg
     github: steffenix
     linkedin: steffenix
     discord: 'steffenix#1182'
@@ -125,8 +127,8 @@
     name: 'Nikolaj Kuntner'
     nickname: Nikolaj-K
     subtitle: 'Gentleman Scientist'
-    role: Contributor
-    image: nikolajkuntner.png
+    role: Developer
+    image: nikolajkuntner.jpg
     github: Nikolaj-K
     linkedin: nikolaj-kuntner-0138aa104
     discord: 'Nikolaj-K#6603'
@@ -138,7 +140,7 @@
     nickname: hal0x2328
     subtitle: 'neo-python developer'
     role: Developer
-    image: joestewart.png
+    image: joestewart.jpg
     github: hal0x2328
     linkedin: joestewart71
     twitter: hal_0x2328
@@ -151,7 +153,7 @@
     nickname: fujita
     subtitle: 'Developer & Community Outreach'
     role: Contributor
-    image: nickfujita.png
+    image: nickfujita.jpg
     github: nickfujita
     linkedin: nickfujita
     twitter: nick_fujita
@@ -164,7 +166,7 @@
     nickname: snowypowers
     subtitle: 'Maintainer of neon-js'
     role: Maintainer
-    image: yakjunxiang.png
+    image: yakjunxiang.jpg
     github: snowypowers
     linkedin: yakjunxiang
     discord: 'snowypowers#0097'
@@ -172,9 +174,9 @@
 -
     name: 'Chris Hager'
     nickname: metachris
-    subtitle: 'neo-python & more'
+    subtitle: 'Maintainer of neo-python & Developer'
     role: Maintainer
-    image: chrishager.png
+    image: chrishager.jpg
     github: metachris
     linkedin: metachris
     twitter: metachris
@@ -187,7 +189,7 @@
     nickname: relfos
     subtitle: 'Maintainer of neo-debugger-tools'
     role: Developer
-    image: sergioflores.png
+    image: sergioflores.jpg
     github: relfos
     linkedin: sergiojf
     twitter: onihunters
@@ -199,7 +201,7 @@
     nickname: canesin
     subtitle: 'Maintainer of sanity'
     role: Council
-    image: fabiocesarcanesin.png
+    image: fabiocesarcanesin.jpg
     github: canesin
     linkedin: canesin
     twitter: canesin
@@ -211,18 +213,19 @@
     nickname: belane
     subtitle: 'Security Team'
     role: Security
-    image: jaimekindelan.png
+    image: jaimekindelan.jpg
     github: belane
     linkedin: jaime-kindelan
     twitter: rbelane
     discord: 'Belane#1011'
+    website: 'https://red4sec.com'
     countrycode: ES
 -
     name: 'Thomas Saunders'
     nickname: localhuman
     subtitle: 'neo-python and neo-boa author'
     role: Council
-    image: thomassaunders.png
+    image: thomassaunders.jpg
     github: localhuman
     twitter: localhuman
     discord: 'localhuman#7907'
@@ -232,7 +235,7 @@
     nickname: Deanpress
     subtitle: 'Developer and workshop host/instructor'
     role: Developer
-    image: deanvandugteren.png
+    image: deanvandugteren.jpg
     github: deanpress
     linkedin: deanpress
     twitter: deanpress
@@ -245,7 +248,7 @@
     nickname: ambethia
     subtitle: 'CoZ Developer and author neo-ruby'
     role: Developer
-    image: jasonlperry.png
+    image: jasonlperry.jpg
     github: ambethia
     twitter: ambethia
     discord: 'ambethia#3722'
@@ -257,7 +260,7 @@
     nickname: dean
     subtitle: 'NEO News Today founder'
     role: Contributor
-    image: deanjeffs.png
+    image: deanjeffs.jpg
     linkedin: deanjeffs
     twitter: neonewstoday
     discord: 'dean#5746'
@@ -269,8 +272,68 @@
     nickname: ashant
     subtitle: 'C#/.NET Developer'
     role: Council
-    image: ashleyrolleston.png
+    image: ashleyrolleston.jpg
     github: AshRolls
     linkedin: ashleyrolleston
     discord: 'ashant#9864'
     countrycode: GB
+-
+    name: 'Andrei Terentiev'
+    nickname: andreit_O3
+    subtitle: 'Neo-Swift, O3 Wallet'
+    role: Contributor
+    image: andreiterentiev.jpg
+    github: saltyskip
+    twitter: O3_Labs
+    discord: 'andreit_O3#9620'
+    website: 'https://o3.network/'
+    countrycode: JP
+    city: Tokyo
+-
+    name: 'Apisit Toompakdee'
+    nickname: apisit
+    subtitle: Developer
+    role: Contributor
+    image: apisittoompakdee.jpg
+    github: apisit
+    linkedin: '-'
+    twitter: O3_Labs
+    discord: apisit
+    website: 'https://o3.network/'
+    countrycode: JP
+    city: Tokyo
+-
+    name: 'Bruno Freitas'
+    nickname: 'Bruno Freitas'
+    subtitle: Developer
+    role: Developer
+    image: brunofreitas.jpg
+    github: BrunoFreitasgit
+    linkedin: bruno-freitas-288364110
+    discord: 'Bruno Freitas#6582'
+    countrycode: PT
+    city: Porto
+-
+    name: 'Jeroen Peeters'
+    nickname: DrPpr
+    subtitle: 'NeoAuth developer'
+    role: Contributor
+    image: jeroenpeeters.jpg
+    github: jeroenptrs
+    linkedin: jeroenptrs
+    twitter: _jptrs
+    discord: 'DrPpr#4136'
+    website: 'https://neoauth.org'
+    countrycode: BE
+    city: Hasselt
+-
+    name: 'Christopher Colomb'
+    nickname: kurisu
+    subtitle: 'NEO Japan Founder'
+    role: Translator
+    image: christophercolomb.jpg
+    github: kurisu1996
+    linkedin: christophercolomb
+    discord: 'kurisu#5802'
+    countrycode: JP
+    city: Okinawa
