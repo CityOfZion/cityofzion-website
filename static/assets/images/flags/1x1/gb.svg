@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" width="512" height="512">
-  <defs>
-    <clipPath id="a">
-      <path fill-opacity=".7" d="M250 0h500v500H250z"/>
-    </clipPath>
-  </defs>
-  <g clip-path="url(#a)" transform="translate(-256) scale(1.024)">
-    <g stroke-width="1pt">
-      <path fill="#006" d="M0 0h1000v500H0z"/>
-      <path fill="#fff" d="M0 0v55.9L888.2 500H1000v-55.9L111.8.1H0zm1000 0v55.9L111.8 500H0v-55.9L888.2 0H1000z"/>
-      <path fill="#fff" d="M416.7 0v500h166.6V0H416.7zM0 166.7v166.6h1000V166.7H0z"/>
-      <path fill="#c00" d="M0 200v100h1000V200H0zM450 0v500h100V0H450zM0 500l333.3-166.7H408L74.5 500H0zM0 0l333.3 166.7h-74.5L0 37.3V0zm592.1 166.7L925.5 0h74.5L666.7 166.7H592zm408 333.3L666.6 333.3h74.5L1000 462.7V500z"/>
-    </g>
-  </g>
-</svg>
+<svg height="512" width="512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m250 0h500v500h-500z"/></clipPath><g clip-path="url(#a)" transform="matrix(1.024 0 0 1.024 -256 0)"><g stroke-width="1pt"><path d="m0 0h1000v500h-1000z" fill="#006"/><path d="m0 0v55.9l888.2 444.1h111.8v-55.9l-888.2-444h-111.8zm1000 0v55.9l-888.2 444.1h-111.8v-55.9l888.2-444.1z" fill="#fff"/><path d="m416.7 0v500h166.6v-500zm-416.7 166.7v166.6h1000v-166.6z" fill="#fff"/><path d="m0 200v100h1000v-100zm450-200v500h100v-500zm-450 500 333.3-166.7h74.7l-333.5 166.7zm0-500 333.3 166.7h-74.5l-258.8-129.4zm592.1 166.7 333.4-166.7h74.5l-333.3 166.7h-74.7zm408 333.3-333.5-166.7h74.5l258.9 129.4v37.3z" fill="#c00"/></g></g></svg>
