@@ -1,0 +1,26 @@
+{{ range .Site.Data.Team }}
+		<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 team-member-wrapper">
+            <span class="lead-graphic"></span>
+            <div class="team-member card">
+	            <div class="image-holder" style="padding: 15px;">
+	                <img class="card-img-top" src="/assets/images/team-images/{{ .image }}" alt="{{ .name }}">
+                </div>
+                <div class="team-member-role">
+	                {{ .role }}
+                </div>
+                <div class="team-member-details">
+	                <div class="team-member-nickname">{{ if .countrycode }}<span title="{{ .countrycode | lower }}" class="flag-icon flag-icon-{{ .countrycode | lower }}"></span>{{ end }} {{ .nickname }}</div>
+	                <div class="team-member-name">{{ .name }}</div>
+	                <div class="team-member-subtitle">{{ .subtitle }}</div>
+                </div>
+                <div class="team-member-contact d-flex justify-content-between px-3">
+					{{ if .github }}<div class=""><a href="http://www.github.com/{{ .github }}" target="_blank"><i class="fab fa-github"></i></a></div>{{ end }}
+					{{ if .linkedin }}<div class=""><a href="http://www.linkedin.com/in/{{ .linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a></div>{{ end }}
+					{{ if .twitter }}<div class=""><a href="http://www.twitter.com/{{ .twitter }}" target="_blank"><i class="fab fa-twitter"></i></a></div>{{ end }}
+					{{ if .discord }}<div class=""><a href="http://www.discord.com/{{ .discord }}" target="_blank"><i class="fab fa-discord"></i></a></div>{{ end }}
+					{{ if .website }}<div class=""><a href="{{ .website }}" target="_blank"><i class="fa fa-globe"></i></a></div>{{ end }}
+                </div>
+            </div>
+        </div>
+{{ end }}
+

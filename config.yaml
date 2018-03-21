@@ -4,10 +4,16 @@ baseURL: "https://cityofzion.io/"
 pygmentsStyle: "monokai"
 pygmentsUseClasses: true
 MetaDataFormat: "yaml"
+  
 permalinks:
   post: /:year/:month/:title/
 
 params:
-  github: CityOfZion
-  twitter: coz_official
+  github: "CityOfZion"
+  twitter: "coz_official"
+  reddit: "NEO"
+  discord: "R8v48YA"
+  facebook: "CityOfZionOfficial"
+  medium: "@cityofzion"
+  
   googleAnalyticsUserID: "UA-XXX"

@@ -1,0 +1,276 @@
+-
+    name: 'Benjamin J.J. de Bos'
+    nickname: Woodehh
+    subtitle: 'neo-php & CityOfZion.io developer'
+    role: Developer
+    image: benjaminjjdebos.png
+    github: Woodehh
+    linkedin: benjamindebos
+    twitter: banjiman
+    discord: 'Woodehh#4680'
+    website: 'http://www.benjamindebos.nl'
+    countrycode: NL
+    city: Arnhem
+-
+    name: 'Thomas Lobker'
+    nickname: MediaSmurf
+    subtitle: 'Contributor and community support for City of Zion'
+    role: Contributor
+    image: thomaslobker.png
+    github: MediaServe
+    linkedin: thomaslobker
+    twitter: ThomasLobker
+    discord: 'Thomas Lobker#8351'
+    countrycode: NL
+-
+    name: 'Anthony De Meulemeester'
+    nickname: anthdm
+    subtitle: 'Maintainer of neo-go'
+    role: Maintainer
+    image: anthonydemeulemeester.png
+    github: anthdm
+    linkedin: 'Anthony De Meulemeester'
+    twitter: anthdm
+    discord: anthdm
+    countrycode: BE
+-
+    name: 'Brian Lenz'
+    nickname: Brian
+    subtitle: 'neo-python developer'
+    role: Developer
+    image: brianlenz.png
+    github: brianlenz
+    linkedin: brianlenz
+    twitter: brianlenz
+    discord: 'Brian Lenz#7538'
+    countrycode: US
+    city: 'Seattle, WA'
+-
+    name: 'Silas Albrecht'
+    nickname: slipo
+    subtitle: Developer
+    role: Developer
+    image: silasalbrecht.png
+    github: slipo
+    twitter: slip_o
+    discord: 'slipo#5889'
+-
+    name: 'Charlie Revett'
+    nickname: revett
+    subtitle: 'Core CoZ Developer, NeoAuth Creator'
+    role: Maintainer
+    image: charlierevett.png
+    github: revett
+    linkedin: cdrev
+    twitter: charlierevett
+    discord: 'revett#1090'
+    countrycode: GB
+    city: London
+-
+    name: 'Austin Hinderer'
+    nickname: zeshon
+    subtitle: Developer
+    role: Developer
+    image: austinhinderer.png
+    github: austinhinderer
+    linkedin: austinhinderer
+    countrycode: US
+    city: ' Seattle, WA'
+-
+    name: 'Fernando Díaz Toledano'
+    nickname: shargon
+    subtitle: 'Security Team'
+    role: Security
+    image: fernandodiaztoledano.png
+    github: shargon
+    linkedin: fernando-d%C3%ADaz-toledano
+    twitter: ShargonXL
+    discord: 'Shargon#1912'
+    countrycode: ES
+-
+    name: 'Matt Huggins'
+    nickname: mhuggins
+    subtitle: 'Neon Wallet Developer'
+    role: Developer
+    image: matthuggins.png
+    github: mhuggins
+    linkedin: huggie
+    twitter: mhuggins
+    discord: 'mhuggins#3797'
+    countrycode: US
+    city: 'Round Rock, TX'
+-
+    name: 'Alex Guba'
+    nickname: gubanotorious
+    subtitle: 'C#/.NET Developer'
+    role: Contributor
+    image: alexguba.png
+    github: gubanotorious
+    linkedin: alex-guba-a057173
+    twitter: gubanotorious
+    discord: 'gubanotorious#3383'
+    website: 'http://www.treatail.com'
+    countrycode: US
+    city: 'Cleveland, OH'
+-
+    name: Steffel
+    nickname: Stef
+    subtitle: 'NeoChat dev'
+    role: Contributor
+    image: steffel.png
+    github: steffenix
+    linkedin: steffenix
+    discord: 'steffenix#1182'
+-
+    name: 'Nikolaj Kuntner'
+    nickname: Nikolaj-K
+    subtitle: 'Gentleman Scientist'
+    role: Contributor
+    image: nikolajkuntner.png
+    github: Nikolaj-K
+    linkedin: nikolaj-kuntner-0138aa104
+    discord: 'Nikolaj-K#6603'
+    website: 'https://axiomsofchoice.org/'
+    countrycode: AT
+    city: Vienna
+-
+    name: 'Joe Stewart'
+    nickname: hal0x2328
+    subtitle: 'neo-python developer'
+    role: Developer
+    image: joestewart.png
+    github: hal0x2328
+    linkedin: joestewart71
+    twitter: hal_0x2328
+    discord: 'hal0x2328#2328'
+    website: 'https://splyse.tech/'
+    countrycode: US
+    city: 'Myrtle Beach, SC'
+-
+    name: 'Nick Fujita'
+    nickname: fujita
+    subtitle: 'Developer & Community Outreach'
+    role: Contributor
+    image: nickfujita.png
+    github: nickfujita
+    linkedin: nickfujita
+    twitter: nick_fujita
+    discord: 'fujita#7297'
+    website: 'http://nickfujita.com/'
+    countrycode: JP
+    city: Tokyo
+-
+    name: 'Yak Jun Xiang'
+    nickname: snowypowers
+    subtitle: 'Maintainer of neon-js'
+    role: Maintainer
+    image: yakjunxiang.png
+    github: snowypowers
+    linkedin: yakjunxiang
+    discord: 'snowypowers#0097'
+    countrycode: SG
+-
+    name: 'Chris Hager'
+    nickname: metachris
+    subtitle: 'neo-python & more'
+    role: Maintainer
+    image: chrishager.png
+    github: metachris
+    linkedin: metachris
+    twitter: metachris
+    discord: 'metachris#2573'
+    website: 'https://www.metachris.com'
+    countrycode: AT
+    city: Vienna
+-
+    name: 'Sérgio Flores'
+    nickname: relfos
+    subtitle: 'Maintainer of neo-debugger-tools'
+    role: Developer
+    image: sergioflores.png
+    github: relfos
+    linkedin: sergiojf
+    twitter: onihunters
+    discord: 'relfos#0863'
+    website: 'http://lunarlabs.pt/'
+    countrycode: PT
+-
+    name: 'Fábio César Canesin'
+    nickname: canesin
+    subtitle: 'Maintainer of sanity'
+    role: Council
+    image: fabiocesarcanesin.png
+    github: canesin
+    linkedin: canesin
+    twitter: canesin
+    discord: '@canesin#5067 '
+    countrycode: BR
+    city: 'Camebridge, MA'
+-
+    name: 'Jaime Kindelan'
+    nickname: belane
+    subtitle: 'Security Team'
+    role: Security
+    image: jaimekindelan.png
+    github: belane
+    linkedin: jaime-kindelan
+    twitter: rbelane
+    discord: 'Belane#1011'
+    countrycode: ES
+-
+    name: 'Thomas Saunders'
+    nickname: localhuman
+    subtitle: 'neo-python and neo-boa author'
+    role: Council
+    image: thomassaunders.png
+    github: localhuman
+    twitter: localhuman
+    discord: 'localhuman#7907'
+    website: 'https://neo-python.readthedocs.io/en/latest/'
+-
+    name: 'Dean van Dugteren'
+    nickname: Deanpress
+    subtitle: 'Developer and workshop host/instructor'
+    role: Developer
+    image: deanvandugteren.png
+    github: deanpress
+    linkedin: deanpress
+    twitter: deanpress
+    discord: 'Deanpress#9300'
+    website: 'https://dean.press'
+    countrycode: NL
+    city: Amsterdam
+-
+    name: 'Jason L Perry'
+    nickname: ambethia
+    subtitle: 'CoZ Developer and author neo-ruby'
+    role: Developer
+    image: jasonlperry.png
+    github: ambethia
+    twitter: ambethia
+    discord: 'ambethia#3722'
+    website: 'https://github.com/ambethia/'
+    countrycode: US
+    city: 'St Petersburg, FL'
+-
+    name: 'Dean Jeffs'
+    nickname: dean
+    subtitle: 'NEO News Today founder'
+    role: Contributor
+    image: deanjeffs.png
+    linkedin: deanjeffs
+    twitter: neonewstoday
+    discord: 'dean#5746'
+    website: 'https://neonewstoday.com'
+    countrycode: AU
+    city: 'Sydney, NSW'
+-
+    name: 'Ashley Rolleston'
+    nickname: ashant
+    subtitle: 'C#/.NET Developer'
+    role: Council
+    image: ashleyrolleston.png
+    github: AshRolls
+    linkedin: ashleyrolleston
+    discord: 'ashant#9864'
+    countrycode: GB

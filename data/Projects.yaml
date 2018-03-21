@@ -1,0 +1,29 @@
+- title: "Neonwallet"
+  description: "An Electron-based light wallet (no need for chain copy nor VM) for Windows, OSX, and Linux users."
+  image: "neon-wallet.jpg"
+  url: "http://www.neonwallet.com/"
+
+- title: "Internal Documentation"
+  description: "CoZ members coordinate efforts from multilingual translators to share information with the world."
+  image: "internal-docs.jpg"
+  url: "https://github.com/neo-project/docs"
+
+- title: "Neoscan"
+  description: "Neoscan is a high-performance block explorer and API laying the foundation for other projects."
+  image: "neo-scan.jpg"
+  url: "https://neoscan.io/"
+
+- title: "neo-python"
+  description: "neo-python is a Python node and SDK for the NEO blockchain."
+  image: "neo-python.jpg"
+  url: "https://neo-python.readthedocs.io/"
+
+- title: "NeoMon"
+  description: "NeoMon is a tool for monitoring the status of popular RPC Nodes and REST endpoints on the Neo network."
+  image: "neo-monitor.jpg"
+  url: "http://monitor.cityofzion.io/"
+
+- title: "More to come..."
+  description: "We're working on lots of things; you can follow along and help vote on priorities in our GitHub organisation!"
+  image: "more-on-github.jpg"
+  url: "http://cityofzion.io/images/more-on-github.jpg"
