@@ -73,10 +73,10 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     <!-- Page image -->
     {{ if .Params.image -}}
-    <link rel="image_src" href="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image:url" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" />
-    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}/assets/images/opengraph-images/{{ .Params.image }}" /> {{- end }}
+    <link rel="image_src" href="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image:url" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" />
+    <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ .Params.image }}" /> {{- end }}
     <!-- OpenGraph and Twitter tags -->
     {{ if .IsPage -}}
     <meta property="og:type" content="article" /> {{ range .Params.tags }}
@@ -87,7 +87,7 @@
     <meta name="twitter:title" content="{{ .Title }}" />
     <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Summary }}{{ end }}" />
     <meta name="twitter:url" content="{{ .Permalink }}" />
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ if .Params.twitterImage }}{{ .Params.twitterImage }}{{ else }}{{ .Params.image }}{{ end }}" /> {{ if .Params.twitterImageAlt }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ if .Params.twitterImage }}{{ .Params.twitterImage }}{{ else }}{{ .Params.image }}{{ end }}" /> {{ if .Params.twitterImageAlt }}
     <meta name="twitter:image:alt" content="{{ .Params.twitterImageAlt }}" />{{ end }} {{ else -}}
     <meta property="og:type" content="website" /> {{ end }}
 </head>

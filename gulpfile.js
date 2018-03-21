@@ -5,79 +5,24 @@ var gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	cleancss = require('gulp-clean-css')
 
-var GoogleSpreadsheet = require('google-spreadsheet-to-json'),
-	Jimp = require("jimp"),
+var	imagemin = require("gulp-imagemin"),
+	imageminPngquant = require('imagemin-pngquant'),
+	imageminZopfli = require('imagemin-zopfli'),
+	imageminMozjpeg = require('imagemin-mozjpeg'),
+	imageminGiflossy = require('imagemin-giflossy')
+	
+
+var Jimp = require("jimp"),
 	slugify = require('slugify'),
 	YAML = require('yamljs'),
 	fs = require('fs'),
 	cliProgress = require('cli-progress');
-	
-	
+		
 var team_image_folder = "./static/assets/images/team-images/";
 
-
-//collect data from spreadsheet:
-gulp.task('collectTeamInfo', function(callbackFinish){ 
-
-	function toTitleCase(str){
-	    return str.toLowerCase();
-	}
-
-	var members = [];
-	console.log("Getting spreadsheet info");
-	//receive the spreadsheet info
-	var gsjson = require('google-spreadsheet-to-json');
-	gsjson({
-	    spreadsheetId: '1meX5gF-klNx5NHVAeoiAllOlAaO0uDzdNP0C7ezsvg0',
-	    credentials: "./google-api-key/google-api-key.json"
-	}).then(function(result) {
-		
-		//task tester
-		var finishedTasks = 0;
-		var totalTasks = result.length;
-		
-		console.log("Downloading "+(result.length+1)+" members...");
-				
-		//create the progress bar
-		var progress_bar = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
-		progress_bar.start(totalTasks+1	, 1);
-				
-
-		//loop the object
-		result.forEach(function(member) {			
-			//generate the filename
-			var filename = slugify(toTitleCase(member.name),{replacement: ''}).replace(/\./g, "").replace(/-/g, "")+".png";
-			var remoteFileName = member['image'];
-			//replace the image
-			member['image'] = filename;
-			
-			//push the member object to member
-			members.push(member);
-
-			//resize the image to a 480x480
-			Jimp.read(remoteFileName.trim()).then(function (imageObject) {
-				imageObject.cover(480,480).write(team_image_folder+filename);
-				//increment the progressbar
-				progress_bar.increment();
-				finishedTasks++;				
-				if (totalTasks == finishedTasks) {
-					console.log("\nDone! Storing team YAML");
-					yamlString = YAML.stringify(members, 4);
-					fs.writeFile("./data/Team.yaml", yamlString, function(err) {
-						progress_bar.stop();						
-						callbackFinish();
-					});
-				}
-			}).catch(function (err) {
-			});
-		});
-	});
-});
-
 //generate an image
-gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish){ 
-	
-	
+gulp.task('generateTeamOpengraph', function(callbackFinish){ 
+
 	//new arary for images
 	team_images = [];
 
@@ -118,7 +63,7 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
     fs.readdir(team_image_folder, function(err, filenames) {
 	       
 	    //clean the filennames
-	    filenames = filterArray(filenames,/.png/g);
+	    filenames = filterArray(filenames,/.jpg/g);
 
 		//file array
 		file_reads = [];
@@ -183,7 +128,7 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
 				opengraph_image.composite(city_logo, city_logo_x, city_logo_y);
 
 				//set background color for opacity
-				this.quality(85).write(opengraph_team_dest)
+				this.quality(100).write(opengraph_team_dest)
 				progress_bar.stop();
 				callbackFinish();
 			});
@@ -192,10 +137,9 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
 });
 
 //remove the Public folder
-gulp.task('removePublicFolder', ['generateTeamOpengraph'], function(){ 
-	gulp.src('app/tmp', {read: false})
-	        .pipe(clean());
-});
+gulp.task('removePublicFolder', ['generateTeamOpengraph'], shell.task([
+  'rm -rf ./public/'
+]));
 
 //running hugo
 gulp.task('runHugo', ['removePublicFolder'], shell.task([
@@ -216,6 +160,40 @@ gulp.task('minifyCSS', ['runHugo'], function(){
         .pipe(gulp.dest("./public/assets/css/"));
 });
 
+//minify team images
+gulp.task('minifyImages',['runHugo'], function(){
+	return gulp.src('./public/assets/images/{team-images,opengraph-images,project-images}/*.{jpg,png,gif}')
+        .pipe(imagemin([
+            imageminPngquant({
+                speed: 1,
+                quality: 98 //lossy settings
+            }),
+            imageminZopfli({
+                more: true
+            }),
+            imageminGiflossy({
+                optimizationLevel: 3,
+                optimize: 3, //keep-empty: Preserve empty transparent frames
+                lossy: 2
+            }),
+            //svg
+            imagemin.svgo({
+                plugins: [{
+                    removeViewBox: false
+                }]
+            }),
+            //jpg lossless
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            //jpg very light lossy, use vs jpegtran
+            imageminMozjpeg({
+                quality: 90
+            })
+        ]))
+		.pipe(gulp.dest('./public/assets/images/'));
+});
+
 //HTML tidy
 gulp.task('tidyHTML', ['runHugo'], function(){	
     gulp.src('./public/**/*.html')
@@ -229,6 +207,6 @@ gulp.task('tidyHTML', ['runHugo'], function(){
         .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('build',['collectTeamInfo','generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML'],function(){});
+gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
 gulp.task('retrieveData',['collectTeamInfo', 'generateTeamOpengraph'],function(){});
 gulp.task('generateOpengraph',['generateTeamOpengraph'],function(){});
