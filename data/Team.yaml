@@ -2,7 +2,7 @@
     name: 'Benjamin J.J. de Bos'
     nickname: Woodehh
     subtitle: 'neo-php & CityOfZion.io developer'
-    role: Contributor
+    role: Developer
     image: benjaminjjdebos.jpg
     github: Woodehh
     linkedin: benjamindebos
@@ -174,7 +174,7 @@
 -
     name: 'Chris Hager'
     nickname: metachris
-    subtitle: 'Maintainer of neo-python & Developer'
+    subtitle: 'neo-python & more'
     role: Maintainer
     image: chrishager.jpg
     github: metachris
@@ -337,12 +337,12 @@
     discord: 'kurisu#5802'
     countrycode: JP
     city: Okinawa
--    
+-
     name: 'Luciano Engel'
     nickname: LucianoEngel
     subtitle: 'Neoscan Author and Maintainer'
     role: Council
-    image: lucianoengel.png
+    image: lucianoengel.jpg
     github: lucianoengel
     linkedin: luciano-engel-07950622
     discord: 'LucianoEngel#3662 '
