@@ -21,64 +21,6 @@ var GoogleSpreadsheet = require('google-spreadsheet-to-json'),
 		
 var team_image_folder = "./static/assets/images/team-images/";
 
-//collect data from spreadsheet:
-gulp.task('collectTeamInfo', function(callbackFinish){ 
-
-	function toTitleCase(str){
-	    return str.toLowerCase();
-	}
-
-	var members = [];
-	console.log("Getting spreadsheet info");
-	//receive the spreadsheet info
-	var gsjson = require('google-spreadsheet-to-json');
-	gsjson({
-	    spreadsheetId: '1meX5gF-klNx5NHVAeoiAllOlAaO0uDzdNP0C7ezsvg0',
-	    credentials: "./google-api-key/google-api-key.json"
-	}).then(function(result) {
-		
-		//task tester
-		var finishedTasks = 0;
-		var totalTasks = result.length;
-		
-		console.log("Downloading "+(result.length+1)+" members...");
-				
-		//create the progress bar
-		var progress_bar = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
-		progress_bar.start(totalTasks+1	, 1);
-				
-
-		//loop the object
-		result.forEach(function(member) {			
-			//generate the filename
-			var filename = slugify(toTitleCase(member.name),{replacement: ''}).replace(/\./g, "").replace(/-/g, "")+".jpg";
-			var remoteFileName = member['image'];
-			//replace the image
-			member['image'] = filename;
-			
-			//push the member object to member
-			members.push(member);
-
-			//resize the image to a 480x480
-			Jimp.read(remoteFileName.trim()).then(function (imageObject) {
-				imageObject.cover(480,480).quality(100).write(team_image_folder+filename);
-				//increment the progressbar
-				progress_bar.increment();
-				finishedTasks++;				
-				if (totalTasks == finishedTasks) {
-					console.log("\nDone! Storing team YAML");
-					yamlString = YAML.stringify(members, 4);
-					fs.writeFile("./data/Team.yaml", yamlString, function(err) {
-						progress_bar.stop();						
-						callbackFinish();
-					});
-				}
-			}).catch(function (err) {
-			});
-		});
-	});
-});
-
 //generate an image
 gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish){ 
 
@@ -267,6 +209,6 @@ gulp.task('tidyHTML', ['runHugo'], function(){
         .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('build',['collectTeamInfo','generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
+gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
 gulp.task('retrieveData',['collectTeamInfo', 'generateTeamOpengraph'],function(){});
 gulp.task('generateOpengraph',['generateTeamOpengraph'],function(){});
