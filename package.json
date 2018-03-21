@@ -1,8 +1,12 @@
 {
   "name": "CityOfZion-website",
   "version": "0.1.0",
-  "devDependencies": {},
   "dependencies": {
+    "gulp-imagemin": "^4.1.0",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^5.1.0",
+    "imagemin-zopfli": "^5.1.0",
     "cli-progress": "^1.8.0",
     "fs": "0.0.1-security",
     "google-spreadsheet-to-json": "^1.0.0",

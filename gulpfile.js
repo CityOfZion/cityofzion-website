@@ -5,16 +5,21 @@ var gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	cleancss = require('gulp-clean-css')
 
+var	imagemin = require("gulp-imagemin"),
+	imageminPngquant = require('imagemin-pngquant'),
+	imageminZopfli = require('imagemin-zopfli'),
+	imageminMozjpeg = require('imagemin-mozjpeg'),
+	imageminGiflossy = require('imagemin-giflossy')
+	
+
 var GoogleSpreadsheet = require('google-spreadsheet-to-json'),
 	Jimp = require("jimp"),
 	slugify = require('slugify'),
 	YAML = require('yamljs'),
 	fs = require('fs'),
 	cliProgress = require('cli-progress');
-	
-	
+		
 var team_image_folder = "./static/assets/images/team-images/";
-
 
 //collect data from spreadsheet:
 gulp.task('collectTeamInfo', function(callbackFinish){ 
@@ -46,7 +51,7 @@ gulp.task('collectTeamInfo', function(callbackFinish){
 		//loop the object
 		result.forEach(function(member) {			
 			//generate the filename
-			var filename = slugify(toTitleCase(member.name),{replacement: ''}).replace(/\./g, "").replace(/-/g, "")+".png";
+			var filename = slugify(toTitleCase(member.name),{replacement: ''}).replace(/\./g, "").replace(/-/g, "")+".jpg";
 			var remoteFileName = member['image'];
 			//replace the image
 			member['image'] = filename;
@@ -56,7 +61,7 @@ gulp.task('collectTeamInfo', function(callbackFinish){
 
 			//resize the image to a 480x480
 			Jimp.read(remoteFileName.trim()).then(function (imageObject) {
-				imageObject.cover(480,480).write(team_image_folder+filename);
+				imageObject.cover(480,480).quality(100).write(team_image_folder+filename);
 				//increment the progressbar
 				progress_bar.increment();
 				finishedTasks++;				
@@ -76,8 +81,7 @@ gulp.task('collectTeamInfo', function(callbackFinish){
 
 //generate an image
 gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish){ 
-	
-	
+
 	//new arary for images
 	team_images = [];
 
@@ -118,7 +122,7 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
     fs.readdir(team_image_folder, function(err, filenames) {
 	       
 	    //clean the filennames
-	    filenames = filterArray(filenames,/.png/g);
+	    filenames = filterArray(filenames,/.jpg/g);
 
 		//file array
 		file_reads = [];
@@ -183,7 +187,7 @@ gulp.task('generateTeamOpengraph', ['collectTeamInfo'], function(callbackFinish)
 				opengraph_image.composite(city_logo, city_logo_x, city_logo_y);
 
 				//set background color for opacity
-				this.quality(85).write(opengraph_team_dest)
+				this.quality(100).write(opengraph_team_dest)
 				progress_bar.stop();
 				callbackFinish();
 			});
@@ -216,6 +220,40 @@ gulp.task('minifyCSS', ['runHugo'], function(){
         .pipe(gulp.dest("./public/assets/css/"));
 });
 
+//minify team images
+gulp.task('minifyImages',['runHugo'], function(){
+	return gulp.src('./public/assets/images/{team-images,opengraph-images,project-images}/*.{jpg,png,gif}')
+        .pipe(imagemin([
+            imageminPngquant({
+                speed: 1,
+                quality: 98 //lossy settings
+            }),
+            imageminZopfli({
+                more: true
+            }),
+            imageminGiflossy({
+                optimizationLevel: 3,
+                optimize: 3, //keep-empty: Preserve empty transparent frames
+                lossy: 2
+            }),
+            //svg
+            imagemin.svgo({
+                plugins: [{
+                    removeViewBox: false
+                }]
+            }),
+            //jpg lossless
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            //jpg very light lossy, use vs jpegtran
+            imageminMozjpeg({
+                quality: 90
+            })
+        ]))
+		.pipe(gulp.dest('./public/assets/images/'));
+});
+
 //HTML tidy
 gulp.task('tidyHTML', ['runHugo'], function(){	
     gulp.src('./public/**/*.html')
@@ -229,6 +267,6 @@ gulp.task('tidyHTML', ['runHugo'], function(){
         .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('build',['collectTeamInfo','generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML'],function(){});
+gulp.task('build',['collectTeamInfo','generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
 gulp.task('retrieveData',['collectTeamInfo', 'generateTeamOpengraph'],function(){});
 gulp.task('generateOpengraph',['generateTeamOpengraph'],function(){});
