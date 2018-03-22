@@ -208,5 +208,3 @@ gulp.task('tidyHTML', ['runHugo'], function(){
 });
 
 gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
-gulp.task('retrieveData',['collectTeamInfo', 'generateTeamOpengraph'],function(){});
-gulp.task('generateOpengraph',['generateTeamOpengraph'],function(){});
