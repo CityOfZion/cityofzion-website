@@ -34,23 +34,3 @@ just run `gulp build`. It will now export a build to the public folder.
 
 * Install [Node.js](https://nodejs.org/en/download/)
 * Run `npm install` (or `yarn`)
-
-
-### Retrieving team yaml files from Google docs
-
-Get an API key for Google Docs:
-
-1. Create project on https://console.developers.google.com/apis/dashboard.
-2. Click Enable APIs and enable the Google Sheets API
-3. Go to Credentials, then click Create credentials, and select Service account key
-4. Choose New service account in the drop down. Give the account a name, anything is fine.
-5. For Role I selected Project -> Service Account Actor
-6. For Key type, choose JSON (the default) and download the file. This file contains a private key so be very careful with it, it is your credentials after all
-7. Save the as "./google-api-key/google-api-key.json"
-
-
-Retrieve new team data:
-
-```bash
-gulp retrieveData
-```
