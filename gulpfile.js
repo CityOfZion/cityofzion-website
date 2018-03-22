@@ -5,13 +5,6 @@ var gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	cleancss = require('gulp-clean-css')
 
-var	imagemin = require("gulp-imagemin"),
-	imageminPngquant = require('imagemin-pngquant'),
-	imageminZopfli = require('imagemin-zopfli'),
-	imageminMozjpeg = require('imagemin-mozjpeg'),
-	imageminGiflossy = require('imagemin-giflossy')
-	
-
 var Jimp = require("jimp"),
 	slugify = require('slugify'),
 	YAML = require('yamljs'),
@@ -160,40 +153,6 @@ gulp.task('minifyCSS', ['runHugo'], function(){
         .pipe(gulp.dest("./public/assets/css/"));
 });
 
-//minify team images
-gulp.task('minifyImages',['runHugo'], function(){
-	return gulp.src('./public/assets/images/{team-images,opengraph-images,project-images}/*.{jpg,png,gif}')
-        .pipe(imagemin([
-            imageminPngquant({
-                speed: 1,
-                quality: 98 //lossy settings
-            }),
-            imageminZopfli({
-                more: true
-            }),
-            imageminGiflossy({
-                optimizationLevel: 3,
-                optimize: 3, //keep-empty: Preserve empty transparent frames
-                lossy: 2
-            }),
-            //svg
-            imagemin.svgo({
-                plugins: [{
-                    removeViewBox: false
-                }]
-            }),
-            //jpg lossless
-            imagemin.jpegtran({
-                progressive: true
-            }),
-            //jpg very light lossy, use vs jpegtran
-            imageminMozjpeg({
-                quality: 90
-            })
-        ]))
-		.pipe(gulp.dest('./public/assets/images/'));
-});
-
 //HTML tidy
 gulp.task('tidyHTML', ['runHugo'], function(){	
     gulp.src('./public/**/*.html')
@@ -207,6 +166,4 @@ gulp.task('tidyHTML', ['runHugo'], function(){
         .pipe(gulp.dest('./public/'));
 });
 
-gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
-gulp.task('retrieveData',['collectTeamInfo', 'generateTeamOpengraph'],function(){});
-gulp.task('generateOpengraph',['generateTeamOpengraph'],function(){});
+gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML'],function(){});
