@@ -66,8 +66,15 @@ just run `gulp build`. It will now export a build to the public folder.
 * Install [Node.js](https://nodejs.org/en/download/)
 * Run `npm install` (or `yarn`)
 
+## Contributors
+- [Austin Hinderer](https://github.com/austinhinderer)
+- [Benjamin de Bos](https://github.com/woodehh)
+- [Chris Hager](https://github.com/metachris)
+- [Zeshon](https://github.com/zeshon)
+
 ## License
 
 - Open-source [MIT](https://github.com/CityOfZion/neon-js/blob/master/LICENSE.md).
-- Main author is [Benjamin de Bos](https://github.com/woodehh).
-- Maintainer is [Chris Hager](https://github.com/metachris)
+
+## Old repo
+There used to be an 'old' website. That is still to be found [here](https://github.com/CityOfZion/website-deprecated)
