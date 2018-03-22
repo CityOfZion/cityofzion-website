@@ -2,7 +2,6 @@ addons:
   apt:
     packages:
       - python-pygments
-      - libpng16-16
 
 cache:
   directories:
