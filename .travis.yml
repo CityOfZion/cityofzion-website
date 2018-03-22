@@ -3,14 +3,21 @@ addons:
     packages:
       - python-pygments
 
+node_js:
+  - "9"
+  
 before_install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.37.1/hugo_0.37.1_Linux-64bit.deb
   - sudo dpkg -i hugo_0.37.1_Linux-64bit.deb
 
+before_script:
+  - npm install
+  
 # Build the website
 script:
   - rm -rf public || exit 0
   - hugo
+  - gulp build
 
 # Deploy to GitHub pages
 deploy:
