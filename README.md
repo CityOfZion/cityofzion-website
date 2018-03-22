@@ -5,7 +5,7 @@
     alt="City of Zion logo">
 </p>
 
-<h1 align="center">neo-php</h1>
+<h1 align="center">CityOfZion.io source</h1>
 
 <p align="center">
   The CityOfZion.io website source: https://cityofzion.io
