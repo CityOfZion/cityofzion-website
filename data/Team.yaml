@@ -278,6 +278,16 @@
     discord: 'ashant#9864'
     countrycode: GB
 -
+    name: 'Michael de Wal'
+    nickname: totalvamp
+    subtitle: 'Master of Bots'
+    role: Council
+    image: michaeldewal.jpg
+    github: totalvm
+    discord: 'totalvamp#4252'
+    countrycode: JP
+    city: Osaka
+-
     name: 'Andrei Terentiev'
     nickname: andreit_O3
     subtitle: 'Neo-Swift, O3 Wallet'
