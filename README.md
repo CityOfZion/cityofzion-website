@@ -14,7 +14,9 @@
 </p>
 
 <p align="center">
-	[![Build Status](https://travis-ci.org/CityOfZion/cityofzion-website.svg?branch=master)](https://travis-ci.org/CityOfZion/cityofzion-website)
+	<a href="https://travis-ci.org/CityOfZion/cityofzion-website">
+		<img src="https://travis-ci.org/CityOfZion/cityofzion-website.svg?branch=master"/>
+	</a>
 </p>
 
 ## Overview
