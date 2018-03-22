@@ -3,6 +3,10 @@ addons:
     packages:
       - python-pygments
 
+cache:
+  directories:
+    - "node_modules"
+    
 node_js:
   - "9"
   
@@ -11,6 +15,7 @@ before_install:
   - sudo dpkg -i hugo_0.37.1_Linux-64bit.deb
 
 before_script:
+  - npm install -g gulp-cli
   - npm install
   
 # Build the website
