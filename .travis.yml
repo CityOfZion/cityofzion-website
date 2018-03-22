@@ -2,6 +2,7 @@ addons:
   apt:
     packages:
       - python-pygments
+      - libpng
 
 cache:
   directories:
@@ -21,7 +22,6 @@ before_script:
 # Build the website
 script:
   - rm -rf public || exit 0
-  - hugo
   - gulp build
 
 # Deploy to GitHub pages
