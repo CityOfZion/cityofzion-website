@@ -31,10 +31,18 @@ New to our team? Do a pullrequest to add yourself! Important to know that we hav
 If you're NOT on the [City of Zion Github](https://github.com/orgs/CityOfZion/people), you're a contributor. If you're on there you're a developer. For the other roles: You know when you're a maintainer or advisor ;-)
 
 ### Determined your role?
- - Fork the repo
- - Update the [Team.yaml](https://github.com/CityOfZion/cityofzion-website/blob/master/data/Team.yaml)
- - Add a picture in jpg format 480x480px [here](https://github.com/CityOfZion/cityofzion-website/tree/master/static/assets/images/team-images)
- - Create a Pull Request
+If you prefer to be anonymous, it's alright too -- simply don't add your real name,location, etc. but still add yourself. But please use the image: anonymous.jpg.
+1. Fork the repo
+2. Update the [Team.yaml](https://github.com/CityOfZion/cityofzion-website/blob/master/data/Team.yaml)
+3. Add a picture in jpg format 480x480px [here](https://github.com/CityOfZion/cityofzion-website/tree/master/static/assets/images/team-images)
+4. Please resize and export the image in 480x480px JPG format, with about 80% quality. You can do this easily in Gimp or Photoshop ot in the command line with this ImageMagick command:
+```convert -resize "480x480^" -gravity center -crop 480x480+0+0 -strip -interlace Plane -quality 80% <yourpicture> <yourcozpicture>.jpg```
+To just optimize the image if you already have it in the correct size:
+```mogrify -strip -interlace Plane -quality 80% <yourpicture>.jpg```
+5. Create a Pull Request
+
+<3
+
 
 ## Getting started
 
