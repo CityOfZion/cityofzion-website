@@ -166,8 +166,4 @@ gulp.task('tidyHTML', ['runHugo'], function(){
         .pipe(gulp.dest('./public/'));
 });
 
-<<<<<<< HEAD
-gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML','minifyImages'],function(){});
-=======
 gulp.task('build',['generateTeamOpengraph','removePublicFolder','runHugo','minifyJavascript','minifyCSS','tidyHTML'],function(){});
->>>>>>> 55e107e1ef25d2175e300803dd5dec493df11b1e
