@@ -1,37 +1,12 @@
+
 /******************************************
 
 ** Global Styles
 
 ******************************************/
-
-h1, h2, h3, h4, h5, h6, .coz-intro {
-	font-family: 'Orbitron', sans-serif;
-	text-transform: uppercase;
-}
-
-h1, p {
-	color: #FFFFFF;
-}
-
-h2 {
-	color: #FFD84B;
-}
-
-.blue-text-link {
-	color: #4598FF;
-	text-decoration: underline;
-}
-
-.blue-text-link:hover {
-	color: #73B1FF;
-}
-
-#main-wrapper {
-	padding: 0 40px;
-}
-
 /* All H2 yellow headlines */
-.yellow-headline {
+.yellow-headline,
+.grey-headline {
 	font-size: 26px;
 	font-weight: 700;
 	letter-spacing: 3px;
@@ -41,20 +16,6 @@ h2 {
 .container-spacer {
 	height: 200px;
 }
-
-
-/******************************************
-
-** Logo
-
-******************************************/
-
-.coz-logo {
-	margin: 54px auto 150px;
-	width: 260px;
-	height: 45px;
-}
-
 
 /******************************************
 
