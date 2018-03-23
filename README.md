@@ -1,9 +1,24 @@
-[![Build Status](https://travis-ci.org/CityOfZion/cityofzion-website.svg?branch=master)](https://travis-ci.org/CityOfZion/cityofzion-website)
+<p align="center">
+  <img 
+    src="http://res.cloudinary.com/vidsy/image/upload/v1503160820/CoZ_Icon_DARKBLUE_200x178px_oq0gxm.png" 
+    width="125px"
+    alt="City of Zion logo">
+</p>
 
-The cityofzion.io website source: https://cityofzion.io
+<h1 align="center">CityOfZion.io source</h1>
 
-Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator.
+<p align="center">
+  The CityOfZion.io website source: https://cityofzion.io
+</p>
 
+<p align="center">
+	<a href="https://travis-ci.org/CityOfZion/cityofzion-website">
+		<img src="https://travis-ci.org/CityOfZion/cityofzion-website.svg?branch=master"/>
+	</a>
+</p>
+
+## Overview
+Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator and [NodeJS](https://nodejs.org) for building.
 
 ## Getting started
 
@@ -35,22 +50,43 @@ just run `gulp build`. It will now export a build to the public folder.
 * Install [Node.js](https://nodejs.org/en/download/)
 * Run `npm install` (or `yarn`)
 
+## Contributors
+- [Austin Hinderer](https://github.com/austinhinderer)
+- [Benjamin de Bos](https://github.com/woodehh)
+- [Chris Hager](https://github.com/metachris)
+- [Zeshon](https://github.com/zeshon)
 
-### Retrieving team yaml files from Google docs
+## Adding yourself to the team
+New to our team? Do a pullrequest to add yourself! Important to know that we have the following roles:
+ - Council
+ - Advisor
+ - Maintainer
+ - Developer
+ - Contributor
 
-Get an API key for Google Docs:
+If you're NOT on the [City of Zion Github](https://github.com/orgs/CityOfZion/people), you're a contributor. If you're on there you're a developer. For the other roles: You know when you're a maintainer or advisor ;-)
 
-1. Create project on https://console.developers.google.com/apis/dashboard.
-2. Click Enable APIs and enable the Google Sheets API
-3. Go to Credentials, then click Create credentials, and select Service account key
-4. Choose New service account in the drop down. Give the account a name, anything is fine.
-5. For Role I selected Project -> Service Account Actor
-6. For Key type, choose JSON (the default) and download the file. This file contains a private key so be very careful with it, it is your credentials after all
-7. Save the as "./google-api-key/google-api-key.json"
+### Determined your role?
+If you prefer to be anonymous, it's alright too -- simply don't add your real name,location, etc. but still add yourself. But please use the image: anonymous.jpg.
+1. Fork the repo
+2. Update the [Team.yaml](https://github.com/CityOfZion/cityofzion-website/blob/master/data/Team.yaml)
+3. Add a picture in jpg format 480x480px [here](https://github.com/CityOfZion/cityofzion-website/tree/master/static/assets/images/team-images)
+4. Please resize and export the image in 480x480px JPG format, with about 80% quality. You can do this easily in Gimp or Photoshop ot in the command line with this ImageMagick command:
+
+```convert -resize "480x480^" -gravity center -crop 480x480+0+0 -strip -interlace Plane -quality 80% <yourpicture> <yourcozpicture>.jpg```
+
+To just optimize the image if you already have it in the correct size:
+
+```mogrify -strip -interlace Plane -quality 80% <yourpicture>.jpg```
+
+5. Create a Pull Request
+
+<3
 
 
-Retrieve new team data:
+## License
 
-```bash
-gulp retrieveData
-```
+- Open-source [MIT](https://github.com/CityOfZion/neon-js/blob/master/LICENSE.md).
+
+## Old repo
+There used to be an 'old' website. That is still to be found [here](https://github.com/CityOfZion/website-deprecated)
