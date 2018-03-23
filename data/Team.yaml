@@ -231,6 +231,16 @@
     discord: 'localhuman#7907'
     website: 'https://neo-python.readthedocs.io/en/latest/'
 -
+    name: 'Tyler B Adams'
+    nickname: lllwvlvwlll
+    subtitle: 'Evangelism and Standards'
+    role: Council
+    image: tylerAdams.jpg
+    github: lllwvlvwlll
+    twitter: lllwvlvwlll
+    discord: 'tyler#5857'
+    countrycode: ZZ
+-
     name: 'Dean van Dugteren'
     nickname: Deanpress
     subtitle: 'Developer and workshop host/instructor'
