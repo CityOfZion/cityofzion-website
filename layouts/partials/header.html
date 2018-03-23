@@ -69,14 +69,8 @@
     <!-- OpenGraph Tags -->
     <meta property="og:site_name" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" /> 
-    
-    {{ if .Description }}
-    <meta property="og:description" content="{{ .Description }}" />
-    {{ end }}
-    
+    <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.Description }}{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    
-    
     <link rel="image_src" href="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ if .Params.Image }}{{ .Params.Image }}{{ else }}{{ .Site.Params.image }}{{ end }}" />
 	<meta property="og:image" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ if .Params.Image }}{{ .Params.Image }}{{ else }}{{ .Site.Params.image }}{{ end }}" />
     <meta property="og:image:url" content="{{ .Site.BaseURL }}assets/images/opengraph-images/{{ if .Params.Image }}{{ .Params.Image }}{{ else }}{{ .Site.Params.image }}{{ end }}" />
