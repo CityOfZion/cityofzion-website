@@ -38,6 +38,10 @@ h2 {
 	margin-bottom: 5px;
 }
 
+.container-spacer {
+	height: 200px;
+}
+
 
 /******************************************
 
@@ -119,7 +123,7 @@ h2 {
 
 #competition-information-wrapper .stats-wrapper {
 	position: relative;
-	background: url('../images/stats-background-image.png') 0 0 no-repeat;
+	background: url('/assets/images/legacy-images//stats-background-image.png') 0 0 no-repeat;
 	background-size: 100% 100%;
 	background-position: center center;
 	border-left: 2px solid #FFDA00;
@@ -153,7 +157,7 @@ h2 {
 
 #competition-information-wrapper .total-prize {
 	background-image: linear-gradient(-180deg,#4B4B89,#3E3E70);
-	background-image: url('../images/prize-noise.png'), linear-gradient(-180deg,#4B4B89,#3E3E70);
+	background-image: url('/assets/images/legacy-images//prize-noise.png'), linear-gradient(-180deg,#4B4B89,#3E3E70);
 	box-shadow: 0 4px 7px #191937;
 	background-size: 100% 100%;
 }
@@ -173,7 +177,7 @@ h2 {
 }
 
 #competition-information-wrapper .prize-breakdown {
-	background: url('../images/Smaller-ribbon.png') 0 0 no-repeat;
+	background: url('/assets/images/legacy-images//Smaller-ribbon.png') 0 0 no-repeat;
 	background-size: 100% 125px;
 	height: 82px;
 	padding: 25px 0;
@@ -340,10 +344,10 @@ button:focus {
 
 /* Unchecked */
 .radio-buttons label.individual {
-	background: url('../images/ICON_Individual_Unchecked.svg') 94% 51% no-repeat;
+	background: url('/assets/images/legacy-images//ICON_Individual_Unchecked.svg') 94% 51% no-repeat;
 }
 .radio-buttons label.team {
-	background: url('../images/ICON_Team_Unchecked.svg') 94% 51% no-repeat;
+	background: url('/assets/images/legacy-images//ICON_Team_Unchecked.svg') 94% 51% no-repeat;
 }
 
 /* Checked */
@@ -351,10 +355,10 @@ button:focus {
 	border: 1px solid #4598FF;
 }
 .radio-buttons input[type="radio"]:checked+label.individual {
-	background: url('../images/ICON_Individual_Checked.svg') 94% 51% no-repeat #303061;
+	background: url('/assets/images/legacy-images//ICON_Individual_Checked.svg') 94% 51% no-repeat #303061;
 }
 .radio-buttons input[type="radio"]:checked+label.team {
-	background: url('../images/ICON_Team_Checked.svg') 94% 51% no-repeat #303061;
+	background: url('/assets/images/legacy-images//ICON_Team_Checked.svg') 94% 51% no-repeat #303061;
 }
 
 
@@ -374,7 +378,7 @@ button:focus {
     border-radius: 2px;
     box-sizing: border-box;
     background: #303061;
-	background: url('../images/ICON_Downarrow.svg') 92% 51% no-repeat #303061;
+	background: url('/assets/images/legacy-images//ICON_Downarrow.svg') 92% 51% no-repeat #303061;
 	position: relative;
 }
 
@@ -657,7 +661,7 @@ input[type=submit]:hover {
 	}
 
 	#competition-information-wrapper .stats-wrapper {
-		background: url('../images/stats-background-image-mobile.png') 0 0 no-repeat;
+		background: url('/assets/images/legacy-images//stats-background-image-mobile.png') 0 0 no-repeat;
 		background-size: 100% 100%;
 	}
 
@@ -801,7 +805,7 @@ input[type=submit]:hover {
 	}
 
 	#competition-information-wrapper .stats-wrapper {
-		background: url('../images/stats-background-image-mobile.png') 0 0 no-repeat;
+		background: url('/assets/images/legacy-images//stats-background-image-mobile.png') 0 0 no-repeat;
 		background-size: 100% 100%;
 	}
 
