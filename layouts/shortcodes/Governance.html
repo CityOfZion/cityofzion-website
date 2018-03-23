@@ -1,8 +1,0 @@
-{{ range $.Site.Data.Governance }}
-					<div class="col-md-6 col-sm-6 col-lg-4">
-                        <h3>no <span class="number">{{ .number }}</span></h3>
-                        <p>{{ .rule }}</p>
-                        {{ if .subtitle }}<br/><small><b>{{ .subtitle }}</b></small><br/>{{ end }}
-                        {{ if .value }}<small>{{ .value }}</small>{{ end }}
-                    </div>
-{{ end }}
