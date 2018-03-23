@@ -231,6 +231,16 @@
     discord: 'localhuman#7907'
     website: 'https://neo-python.readthedocs.io/en/latest/'
 -
+    name: 'Tyler B Adams'
+    nickname: lllwvlvwlll
+    subtitle: 'Evangelism and Standards'
+    role: Council
+    image: tylerAdams.jpg
+    github: lllwvlvwlll
+    twitter: lllwvlvwlll
+    discord: 'tyler#5857'
+    countrycode: ZZ
+-
     name: 'Dean van Dugteren'
     nickname: Deanpress
     subtitle: 'Developer and workshop host/instructor'
@@ -277,6 +287,16 @@
     linkedin: ashleyrolleston
     discord: 'ashant#9864'
     countrycode: GB
+-
+    name: 'Michael de Wal'
+    nickname: totalvamp
+    subtitle: 'Master of Bots'
+    role: Council
+    image: michaeldewal.jpg
+    github: totalvm
+    discord: 'totalvamp#4252'
+    countrycode: JP
+    city: Osaka
 -
     name: 'Andrei Terentiev'
     nickname: andreit_O3
@@ -347,3 +367,25 @@
     linkedin: luciano-engel-07950622
     discord: 'LucianoEngel#3662 '
     countrycode: BR
+-
+    name: 'Travis Lin'
+    nickname: yenct
+    subtitle: 'City of Zion Developer'
+    role: Developer
+    image: travis.jpg
+    github: rockacola
+    discord: 'yenct15#2311'
+    countrycode: AU
+-
+    name: 'Ethan Fast'
+    nickname: unignorant
+    subtitle: 'Creator of Neon Wallet'
+    role: Council
+    image: ethanfast.jpg
+    github: ejhfast
+    linkedin: ethanfast
+    twitter: unignorant
+    discord: 'unignorant#5594'
+    countrycode: US
+    city: 'Palo Alto'
+
