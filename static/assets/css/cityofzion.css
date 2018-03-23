@@ -215,10 +215,14 @@ h2.logolead {
 }
 
 /* Rule list */
-.rule-list div {
+.rule-list .spacer {
 	border-left:3px solid #4598ff;
-	margin-bottom:80px;
 	padding-left:15px;
+	height: 100%;
+}
+
+.rule-list .space-container {
+	margin-bottom:80px;
 }
 
 .rule-list h3 {

@@ -44,11 +44,13 @@
         <span class="h2-introduction">The community is free to choose its own targets and objectives. That said, our goal is to improve NEO, so we will align with the NEO team's needs and avoid retreading old ground as much as possible, unless it is possible to attain a substantially higher level of quality.</span>
         <div class="row rule-list">
 		{{ range $.Site.Data.Governance }}
-			<div class="col-md-6 col-sm-6 col-lg-4">
-                <h3>no <span class="number">{{ .number }}</span></h3>
-                <p>{{ .rule }}</p>
-                {{ if .subtitle }}<br/><small><b>{{ .subtitle }}</b></small><br/>{{ end }}
-                {{ if .value }}<small>{{ .value }}</small>{{ end }}
+			<div class="col-md-6 col-sm-6 col-lg-4 space-container">
+	            <div class="spacer">
+	                <h3>no <span class="number">{{ .number }}</span></h3>
+	                <p>{{ .rule }}</p>
+	                {{ if .subtitle }}<br/><small><b>{{ .subtitle }}</b></small><br/>{{ end }}
+	                {{ if .value }}<small>{{ .value }}</small>{{ end }}
+	            </div>
             </div>
 		{{ end }}
         </div>
