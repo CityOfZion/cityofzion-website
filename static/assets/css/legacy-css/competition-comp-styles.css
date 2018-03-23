@@ -80,6 +80,7 @@
 	max-width: 978px;
 	margin: 0 auto;
 	background: rgba(26, 26, 57, 0.6);
+	line-height: 1 !important;
 }
 
 #competition-information-wrapper .stats-wrapper {
@@ -91,6 +92,9 @@
 	border-right: 2px solid #FFDA00;
 }
 
+.entry-team {
+	line-height: 1 !important;
+}
 
 /****** Winner stats panel ******/
 
@@ -211,7 +215,6 @@
 
 #copy-wrapper .body-copy {
 	font-size: 18px;
-	font-weight: 400;
 	line-height: 32px;
 	color: #E6ECF2;
 	max-width: 772px;

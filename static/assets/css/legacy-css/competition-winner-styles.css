@@ -242,6 +242,7 @@
 #accordion .accordion-content-wrapper .entry-name {
 	float: left;
 	padding-left: 25px;
+	line-height: .7;
 }
 
 #accordion .accordion-content-wrapper img {
@@ -336,7 +337,6 @@
 
 #copy-wrapper .body-copy {
 	font-size: 16px;
-	font-weight: 400;
 	line-height: 28px;
 	color: #E6ECF2;
 	max-width: 772px;
