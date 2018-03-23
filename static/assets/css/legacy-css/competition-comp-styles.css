@@ -27,9 +27,6 @@ h2 {
 }
 
 #main-wrapper {
-	border: 20px solid #2B2B5E;
-	background: url('../images/Background-texture.jpg') 0 0 no-repeat;
-	background-size: cover;
 	padding: 0 40px;
 }
 
