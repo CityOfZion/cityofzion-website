@@ -1,10 +1,10 @@
 languageCode: "en-us"
-title: "CoZ:City of Zion"
 baseURL: "https://cityofzion.io/"
 pygmentsStyle: "monokai"
 pygmentsUseClasses: true
 MetaDataFormat: "yaml"
-  
+title: "CoZ:City of Zion"
+
 permalinks:
   post: /:year/:month/:title/
 
@@ -15,5 +15,7 @@ params:
   discord: "R8v48YA"
   facebook: "CityOfZionOfficial"
   medium: "@cityofzion"
-  
-  googleAnalyticsUserID: "UA-XXX"
+  googleAnalyticsUserID: "UA-116283895-1"
+
+  image: "opengraph-home.jpg"
+  description: "City of Zion is a global, independent group of open source developers, designers and translators which support the NEO core and ecosystem."
