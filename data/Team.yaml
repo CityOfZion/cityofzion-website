@@ -235,7 +235,7 @@
     nickname: lllwvlvwlll
     subtitle: 'Evangelism and Standards'
     role: Council
-    image: tylerAdams.jpg
+    image: tyleradams.jpg
     github: lllwvlvwlll
     twitter: lllwvlvwlll
     discord: 'tyler#5857'
@@ -388,4 +388,15 @@
     discord: 'unignorant#5594'
     countrycode: US
     city: 'Palo Alto'
+
+-
+    name: ''
+    nickname: coranos
+    subtitle: 'Creator of Neo Ledger App'
+    role: Developer
+    image: ''
+    github: coranos
+    discord: '@Coranos#4281'
+    countrycode: US
+    city: ''
 
