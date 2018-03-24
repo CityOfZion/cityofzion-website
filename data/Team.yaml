@@ -389,3 +389,14 @@
     countrycode: US
     city: 'Palo Alto'
 
+-
+    name: ''
+    nickname: coranos
+    subtitle: 'Creator of Neo Ledger App'
+    role: Developer
+    image: ''
+    github: coranos
+    discord: '@Coranos#4281'
+    countrycode: US
+    city: ''
+
