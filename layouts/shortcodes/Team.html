@@ -3,7 +3,7 @@
             <span class="lead-graphic"></span>
             <div class="team-member card">
 	            <div class="image-holder" style="padding: 15px;">
-	                <img class="card-img-top" src="/assets/images/team-images/{{ .image }}" alt="{{ .name }}">
+	                <img class="card-img-top" src="/assets/images/team-images/{{ if .image}}{{ .image }}{{ else }}anonymous.jpg{{ end }}" alt="{{ .name }}">
                 </div>
                 <div class="team-member-role">
 	                {{ .role }}
