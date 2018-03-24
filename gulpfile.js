@@ -19,7 +19,6 @@ gulp.task('generateTeamOpengraph', function(callbackFinish){
 	//new arary for images
 	team_images = [];
 
-
 	function filterArray(array,pattern) {
 		return_array = [];
 		array.forEach(function(image) {
@@ -67,7 +66,9 @@ gulp.task('generateTeamOpengraph', function(callbackFinish){
     	file_reads.push(new Jimp(opengraph_width, opengraph_height,0x1D1D3FFF))
 		//loop files
 	    filenames.forEach(function(image) {
-			file_reads.push(Jimp.read(team_image_folder+"/"+image));
+		    if (image != "anonymous.jpg") {
+				file_reads.push(Jimp.read(team_image_folder+"/"+image));
+			}
 		});
 
 		Promise.all(file_reads).then(function(images) {
