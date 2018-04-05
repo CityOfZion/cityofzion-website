@@ -397,7 +397,20 @@
     role: Developer
     image: ''
     github: coranos
-    discord: '@Coranos#4281'
+    discord: 'Coranos#4281'
     countrycode: US
     city: ''
+
+-
+    name: 'Nathaniel Walpole'
+    nickname: Velocihamster
+    subtitle: 'Product Design'
+    role: 'Designer'
+    image: nathanielwalpole.jpg
+    github: nat1988
+    linkedin: 'n-walpole'
+    twitter: velocihamsterr
+    discord: 'Velocihamster#2764'
+    countrycode: UK
+    city: London
 
