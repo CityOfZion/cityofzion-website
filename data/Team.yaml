@@ -415,3 +415,15 @@
     countrycode: GB
     city: London
 
+-
+    name: 'Steven Jack'
+    nickname: zillarino
+    subtitle: 'Neo-go contributor'
+    role: 'Contributor'
+    image: stevenjack.jpg
+    github: stevenjack
+    linkedin: 'stevenjack'
+    twitter: stevenjack85
+    discord: 'zillarino#6973'
+    countrycode: GB
+    city: London
