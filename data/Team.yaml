@@ -414,7 +414,18 @@
     discord: 'Velocihamster#2764'
     countrycode: GB
     city: London
-
+-
+    name: 'Steven Jack'
+    nickname: zillarino
+    subtitle: 'Neo-go contributor'
+    role: 'Contributor'
+    image: stevenjack.jpg
+    github: stevenjack
+    linkedin: 'stevenjack'
+    twitter: stevenjack85
+    discord: 'zillarino#6973'
+    countrycode: GB
+    city: London
 -
     name: 'Oleg Smirnov'
     nickname: osmirnov
@@ -426,4 +437,4 @@
     twitter: osmirnov
     discord: 'osmirnov#1674'
     countrycode: CA
-    city: Oakville
+    city: Toronto
