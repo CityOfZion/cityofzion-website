@@ -415,3 +415,15 @@
     countrycode: GB
     city: London
 
+-
+    name: 'Oleg Smirnov'
+    nickname: osmirnov
+    subtitle: 'Neo & NeoSharp developer'
+    role: Contributor
+    image: osmirnov.jpg
+    github: osmirnov
+    linkedin: osmirnov
+    twitter: osmirnov
+    discord: 'osmirnov#1674'
+    countrycode: CA
+    city: Oakville
