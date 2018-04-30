@@ -414,7 +414,6 @@
     discord: 'Velocihamster#2764'
     countrycode: GB
     city: London
-
 -
     name: 'Steven Jack'
     nickname: zillarino
@@ -427,3 +426,15 @@
     discord: 'zillarino#6973'
     countrycode: GB
     city: London
+-
+    name: 'Oleg Smirnov'
+    nickname: osmirnov
+    subtitle: 'Neo & NeoSharp developer'
+    role: Contributor
+    image: osmirnov.jpg
+    github: osmirnov
+    linkedin: osmirnov
+    twitter: osmirnov
+    discord: 'osmirnov#1674'
+    countrycode: CA
+    city: Toronto
