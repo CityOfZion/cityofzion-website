@@ -450,3 +450,15 @@
     discord: 'bsat#5382'
     countrycode: US
     city: Amherst
+-
+    name: 'Dan Cline'
+    nickname: rjected
+    subtitle: 'neo-elixir-vm Author and Maintainer'
+    role: Maintainer
+    image: dancline.jpg
+    github: Rjected
+    linkedin: dan-cline
+    twitter: rjected
+    discord: 'rjected#9216'
+    countrycode: US
+    city: Boxford
