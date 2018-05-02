@@ -438,3 +438,15 @@
     discord: 'osmirnov#1674'
     countrycode: CA
     city: Toronto
+-
+    name: 'Sathvik Birudavolu'
+    nickname: bsat
+    subtitle: 'neo-elixir-vm Author and Maintainer'
+    role: Maintainer
+    image: sathvikbirudavolu.jpg
+    github: BSathvik
+    linkedin: sathvik-birudavolu
+    twitter: BSathvik
+    discord: 'bsat#5382'
+    countrycode: US
+    city: Amherst
