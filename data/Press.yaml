@@ -1,0 +1,157 @@
+-
+    title: "City of Zion logo with text"
+    assets:
+    
+    -   title: 'Black on white'
+        thumbnail: thumbnail-logo-with-text-black-on-white.jpg
+        description: ''
+        files: 
+            jpg: logo-with-text-black-on-white.jpg 
+            png: logo-with-text-black-on-white.png 
+            eps: logo-with-text-black-on-white.eps 
+            pdf: logo-with-text-black-on-white.pdf 
+            svg: logo-with-text-black-on-white.svg 
+        collection: logo-with-text-black-on-white.zip
+
+    -   title: 'Dark blue on light blue'
+        thumbnail: thumbnail-logo-with-text-dark-blue-on-light-blue.jpg
+        description: ''
+        files: 
+            jpg: logo-with-text-dark-blue-on-light-blue.jpg 
+            png: logo-with-text-dark-blue-on-light-blue.png 
+            eps: logo-with-text-dark-blue-on-light-blue.eps 
+            pdf: logo-with-text-dark-blue-on-light-blue.pdf 
+            svg: logo-with-text-dark-blue-on-light-blue.svg 
+        collection: logo-with-text-dark-blue-on-light-blue.zip
+
+    -   title: 'Dark blue on white'
+        thumbnail: thumbnail-logo-with-text-dark-blue-on-white.jpg
+        description: ''
+        files: 
+            jpg: logo-with-text-dark-blue-on-white.jpg 
+            png: logo-with-text-dark-blue-on-white.png 
+            eps: logo-with-text-dark-blue-on-white.eps 
+            pdf: logo-with-text-dark-blue-on-white.pdf 
+            svg: logo-with-text-dark-blue-on-white.svg 
+        collection: logo-with-text-dark-blue-on-white.zip
+    
+    -   title: 'White on black'
+        thumbnail: thumbnail-logo-with-text-white-on-black.jpg
+        description: ''
+        files: 
+            jpg: logo-with-text-white-on-black.jpg 
+            png: logo-with-text-white-on-black.png 
+            eps: logo-with-text-white-on-black.eps 
+            pdf: logo-with-text-white-on-black.pdf 
+            svg: logo-with-text-white-on-black.svg 
+        collection: thumbnail-logo-with-text-white-on-black.zip        
+
+    -   title: 'White on dark blue'
+        thumbnail: thumbnail-logo-with-text-white-on-dark-blue.jpg
+        description: ''
+        files: 
+            jpg: logo-with-text-white-on-dark-blue.jpg 
+            png: logo-with-text-white-on-dark-blue.png 
+            eps: logo-with-text-white-on-dark-blue.eps 
+            pdf: logo-with-text-white-on-dark-blue.pdf 
+            svg: logo-with-text-white-on-dark-blue.svg 
+        collection: logo-with-text-white-on-dark-blue.zip        
+
+-
+    title: "City of Zion logo without text"
+    assets:
+    
+    -   title: 'Black on white'
+        thumbnail: thumbnail-logo-no-text-black-on-white.jpg
+        description: ''
+        files: 
+            jpg: logo-no-text-black-on-white.jpg 
+            png: logo-no-text-black-on-white.png 
+            eps: logo-no-text-black-on-white.eps 
+            pdf: logo-no-text-black-on-white.pdf 
+            svg: logo-no-text-black-on-white.svg 
+        collection: logo-no-text-black-on-white.zip
+
+    -   title: 'Dark blue on light blue'
+        thumbnail: thumbnail-logo-no-text-dark-blue-on-light-blue.jpg
+        description: ''
+        files: 
+            jpg: logo-no-text-dark-blue-on-light-blue.jpg 
+            png: logo-no-text-dark-blue-on-light-blue.png 
+            eps: logo-no-text-dark-blue-on-light-blue.eps 
+            pdf: logo-no-text-dark-blue-on-light-blue.pdf 
+            svg: logo-no-text-dark-blue-on-light-blue.svg 
+        collection: logo-no-text-dark-blue-on-light-blue.zip
+
+    -   title: 'Dark blue on white'
+        thumbnail: thumbnail-logo-no-text-dark-blue-on-white.jpg
+        description: ''
+        files: 
+            jpg: logo-no-text-dark-blue-on-white.jpg 
+            png: logo-no-text-dark-blue-on-white.png 
+            eps: logo-no-text-dark-blue-on-white.eps 
+            pdf: logo-no-text-dark-blue-on-white.pdf 
+            svg: logo-no-text-dark-blue-on-white.svg 
+        collection: logo-no-text-dark-blue-on-white.zip
+    
+    -   title: 'White on black'
+        thumbnail: thumbnail-logo-no-text-white-on-black.jpg
+        description: ''
+        files: 
+            jpg: logo-no-text-white-on-black.jpg 
+            png: logo-no-text-white-on-black.png 
+            eps: logo-no-text-white-on-black.eps 
+            pdf: logo-no-text-white-on-black.pdf 
+            svg: logo-no-text-white-on-black.svg 
+        collection: thumbnail-logo-no-text-white-on-black.zip        
+
+    -   title: 'White on dark blue'
+        thumbnail: thumbnail-logo-no-text-white-on-dark-blue.jpg
+        description: ''
+        files: 
+            jpg: logo-no-text-white-on-dark-blue.jpg 
+            png: logo-no-text-white-on-dark-blue.png 
+            eps: logo-no-text-white-on-dark-blue.eps 
+            pdf: logo-no-text-white-on-dark-blue.pdf 
+            svg: logo-no-text-white-on-dark-blue.svg 
+        collection: logo-no-text-white-on-dark-blue.zip
+        
+        
+-
+    title: "NEO assets"
+    assets:
+    
+    -   title: 'NEO logo with text'
+        thumbnail: thumbnail-neo-logo-with-text.jpg
+        description: 'Courtesy of NEO.org'
+        files: 
+            jpg: thumbnail-neo-logo-with-text.jpg 
+            png: thumbnail-neo-logo-with-text.png 
+            eps: thumbnail-neo-logo-with-text.eps 
+            pdf: thumbnail-neo-logo-with-text.pdf 
+            svg: thumbnail-neo-logo-with-text.svg
+        collection: thumbnail-neo-logo-with-text.zip
+    
+    -   title: 'NEO logo without text'
+        thumbnail: thumbnail-neo-logo-without-text.jpg
+        description: 'Courtesy of NEO.org'
+        files: 
+            jpg: thumbnail-neo-logo-without-text.jpg 
+            png: thumbnail-neo-logo-without-text.png 
+            eps: thumbnail-neo-logo-without-text.eps 
+            pdf: thumbnail-neo-logo-without-text.pdf 
+            svg: thumbnail-neo-logo-without-text.svg
+        collection: thumbnail-neo-logo-without-text.zip  
+    
+    -   title: 'General NEO styleguide'
+        thumbnail: thumbnail-neo-styleguide.jpg
+        description: 'By Velocihamster'
+        files: 
+            jpg: neo-styleguide.jpg 
+            png: neo-styleguide.png 
+            eps: neo-styleguide.eps 
+            pdf: neo-styleguide.pdf 
+            svg: neo-styleguide.svg
+            sketch: neo-styleguide.sketch
+        collection: neo-styleguide.zip                     
+        

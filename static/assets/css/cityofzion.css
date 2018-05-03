@@ -272,8 +272,73 @@ h2.logolead {
 	text-transform:none;
 }
 
+
+
+/* Press page */
+
+.press-section-header {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: orbitron;
+    text-transform: uppercase;
+}
+
+.press-section-header hr {
+    color: white;
+    height: .25px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border: 0px solid transparent;
+    color: #cecece; /* old IE */
+    background-color: #cecece; /* Modern Browsers */
+}
+
+.press-container {
+    margin-bottom: 30px;
+}
+
+
+.press-page .press-part .image-holder img {
+    border: 1px solid white;
+}
+
+.press-page .press-part .press-part-info > div {
+	font-size:18px;
+	text-align: center;	
+}
+
+.press-page .press-part a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.press-page .press-part a:hover {
+    text-decoration: underline;    
+}
+
+.press-page .press-part .press-part-info .press-part-title {
+    font-weight: bold;
+    height: 60px;
+}
+
+.press-page .press-part .press-part-info .press-part-description {
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+
+.press-page .press-part .press-part-info .press-part-download {
+    margin-top: 5px;
+}
+
+
+
+
 /* Team list */
-.team-list span.lead-graphic {
+
+
+
+span.lead-graphic {
 	display:block;
 	background-image:linear-gradient(90deg,#2a43c1,#4598ff);
 	height:4px;
@@ -378,4 +443,18 @@ footer a {
 		padding-top:10px!important;
 		padding-bottom:0!important;
 	}
+}
+
+
+.btn-coz {
+    background-color: #1C1C3E;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+}
+
+.btn-coz:hover {
+    color: #1C1C3E;
+    background-color: white;
+    border: 2px solid #1C1C3E;
 }

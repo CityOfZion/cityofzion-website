@@ -1,0 +1,35 @@
+{{ range .Site.Data.Press }}
+
+        <div class="col-lg-12 press-section-header">
+            <span>{{ .title }}</span>
+            <hr/>
+        </div>
+
+        {{ range .assets }}
+        <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 press-container">
+            <div class="press-part card">
+                <div class="image-holder">
+                    <a href="">
+                        <img class="card-img-top" src="/assets/images/press-thumbnails/{{ .thumbnail }}" alt="{{ .description }}">
+                    </a>
+                </div>
+                <div class="press-part-info">
+                    <div class='press-part-title'>{{ .title }}</div>
+                    <div class='press-part-description'>{{ .description }}</div>
+                    <div class='press-part-download'>
+                        {{ range $key, $value := .files }}
+                        <a target="_blank" href="/downloads/press/{{ $value  }}">{{ $key | upper }}</a>
+                        {{ end }} 
+                        {{ if .collection }} <a target="_blank" href="/downloads/press/{{ .collection }}">Collection</a> {{ end }}                   
+                    </div>
+                    
+                    <br/>
+                </div>
+            </div>
+        </div> 
+        {{ end }}
+
+        
+        
+{{ end }}
+
