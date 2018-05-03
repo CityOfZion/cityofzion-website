@@ -450,3 +450,16 @@
     discord: 'bsat#5382'
     countrycode: US
     city: Amherst
+-
+    name: 'Maurice Dalderup'
+    nickname: Legiit
+    subtitle: 'Contributor'
+    role: Contributor
+    image: mauricedalderup.jpg
+    github: DalderupMaurice
+    linkedin: mauricedalderup
+    twitter: mauricedalderup
+    website: 'http://www.mauricedalderup.be/'
+    discord: 'Legiit#7671'
+    countrycode: BE
+    city: Neerpelt
