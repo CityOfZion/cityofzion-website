@@ -1,12 +1,11 @@
 {{ range .Site.Data.Press }}
 
         <div class="col-lg-12 press-section-header">
-            <span>{{ .title }}</span>
-            <hr/>
+            <div>{{ .title }}</div>
         </div>
 
         {{ range .assets }}
-        <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 press-container">
+        <div class="col-6 col-sm-4 col-md-2 col-lg-2 press-container">
             <div class="press-part card">
                 <div class="image-holder">
                     <a href="/assets/images/press-thumbnails/{{ .thumbnail }}" target="_blank">

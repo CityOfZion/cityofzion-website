@@ -283,18 +283,16 @@ h2.logolead {
     text-transform: uppercase;
 }
 
-.press-section-header hr {
-    color: white;
-    height: .25px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    border: 0px solid transparent;
-    color: #cecece; /* old IE */
-    background-color: #cecece; /* Modern Browsers */
+.press-section-header div {
+    border-bottom: .5px solid white;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    
 }
 
 .press-container {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
