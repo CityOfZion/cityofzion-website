@@ -463,3 +463,16 @@
     discord: 'Legiit#7671'
     countrycode: BE
     city: Neerpelt
+-
+    name: 'Alan Fong'
+    nickname: afong
+    subtitle: 'CoZ Co-Founder, Moonlight Co-Founder, NEP-5 Developer'
+    role: Council
+    image: alanfong.jpg
+    github: anfn101
+    linkedin: 'https://www.linkedin.com/in/anfn101/'
+    twitter: ''
+    discord: 'afong#8888'
+    website: 'http://www.moonlight.io/'
+    countrycode: US
+    city: 'Detroit'
