@@ -125,23 +125,23 @@
         thumbnail: thumbnail-neo-logo-with-text.jpg
         description: 'Courtesy of NEO.org'
         files: 
-            jpg: thumbnail-neo-logo-with-text.jpg 
-            png: thumbnail-neo-logo-with-text.png 
-            eps: thumbnail-neo-logo-with-text.eps 
-            pdf: thumbnail-neo-logo-with-text.pdf 
-            svg: thumbnail-neo-logo-with-text.svg
-        collection: thumbnail-neo-logo-with-text.zip
+            jpg: neo-logo-with-text.jpg 
+            png: neo-logo-with-text.png 
+            eps: neo-logo-with-text.eps 
+            pdf: neo-logo-with-text.pdf 
+            svg: neo-logo-with-text.svg
+        collection: neo-logo-with-text.zip
     
     -   title: 'NEO logo without text'
         thumbnail: thumbnail-neo-logo-without-text.jpg
         description: 'Courtesy of NEO.org'
         files: 
-            jpg: thumbnail-neo-logo-without-text.jpg 
-            png: thumbnail-neo-logo-without-text.png 
-            eps: thumbnail-neo-logo-without-text.eps 
-            pdf: thumbnail-neo-logo-without-text.pdf 
-            svg: thumbnail-neo-logo-without-text.svg
-        collection: thumbnail-neo-logo-without-text.zip  
+            jpg: neo-logo-without-text.jpg 
+            png: neo-logo-without-text.png 
+            eps: neo-logo-without-text.eps 
+            pdf: neo-logo-without-text.pdf 
+            svg: neo-logo-without-text.svg
+        collection: neo-logo-without-text.zip  
     
     -   title: 'General NEO styleguide'
         thumbnail: thumbnail-neo-styleguide.jpg
