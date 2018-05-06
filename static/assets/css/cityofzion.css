@@ -275,10 +275,9 @@ h2.logolead {
 
 
 /* Press page */
-
 .press-section-header {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
     font-family: orbitron;
     text-transform: uppercase;
 }
@@ -315,7 +314,7 @@ h2.logolead {
 }
 
 .press-page .press-part .press-part-info .press-part-title {
-    font-weight: bold;
+    font-weight: normal;
     height: 60px;
 }
 
