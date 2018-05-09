@@ -464,6 +464,19 @@
     countrycode: BE
     city: Neerpelt
 -
+    name: 'Fredrik Strand Oseberg'
+    nickname: Khare
+    subtitle: 'NeoLink Designer and Frontend Developer'
+    role: Contributor
+    image: fredrikoseberg.jpg
+    github: 'https://github.com/FredrikOseberg'
+    linkedin: 'https://www.linkedin.com/in/foseberg/'
+    twitter: 'https://twitter.com/foseberg'
+    website: 'https://websmith.no/'
+    discord: 'Khare#8072'
+    countrycode: NO
+    city: Oslo
+-
     name: 'Alan Fong'
     nickname: afong
     subtitle: 'CoZ Co-Founder, Moonlight Co-Founder, NEP-5 Developer'
