@@ -489,3 +489,15 @@
     website: 'http://www.moonlight.io/'
     countrycode: US
     city: 'Detroit'
+-
+    name: 'David Schwartz'
+    nickname: BjornBorg
+    subtitle: 'CoZ Developer, NEX Developer'
+    role: Developer
+    image: davidschwartz.jpg
+    github: dvdschwrtz
+    linkedin: 'https://www.linkedin.com/in/dvdschwrtz/'
+    twitter: 'dvdschwrtz'
+    discord: 'BjornBorg#8659'
+    countrycode: US
+    city: 'Los Angeles'
