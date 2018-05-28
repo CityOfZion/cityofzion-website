@@ -25,7 +25,7 @@
         <span class="h2-introduction">Exemplary projects created through collaborative or individual efforts from the City of Zion.</span>
         <div class="row project-list">
 		{{ range $.Site.Data.Projects }}
-            <div class="col-md-6 col-sm-6 col-lg-4">
+            <div class="col-md-6 col-sm-6 col-lg-4 project-card-wrapper">
                 <a href="{{ .url }}" class="card grower">
                     <img class="card-img-top" src="/assets/images/project-images/{{ .image }}" alt="{{ .title }}">
                     <span></span>
