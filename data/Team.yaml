@@ -429,8 +429,8 @@
 -
     name: 'Oleg Smirnov'
     nickname: osmirnov
-    subtitle: 'Neo & NeoSharp developer'
-    role: Contributor
+    subtitle: 'CoZ developer, NeoSharp developer'
+    role: Developer
     image: osmirnov.jpg
     github: osmirnov
     linkedin: osmirnov
