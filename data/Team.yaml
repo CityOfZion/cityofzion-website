@@ -512,3 +512,12 @@
     twitter: drptbl
     discord: 'drptbl#2266'
     city: 'Białystok'
+-
+    name: 'Adrien Moreau'
+    nickname: adrienmo
+    subtitle: 'Maintainer of neo-scan'
+    role: Maintainer
+    image: adrienmo.jpg
+    github: adrienmo
+    discord: 'adrienmo#1217'
+    countrycode: FR
