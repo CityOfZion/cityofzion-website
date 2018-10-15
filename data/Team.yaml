@@ -521,3 +521,39 @@
     github: adrienmo
     discord: 'adrienmo#1217'
     countrycode: FR
+-
+    name: 'Gil Lopes Bueno'
+    nickname: melanke
+    subtitle: 'Neo-Sharp Contributor'
+    role: Contributor
+    image: gillopesbueno.jpg
+    github: melanke
+    linkedin: gilbueno
+    website: 'https://www.simpli.com.br/'
+    discord: 'gil.melanke#2132'
+    countrycode: BR
+    city: 'Sao Paulo, SP'
+-
+    name: 'Ricardo Akio Kobayashi'
+    nickname: koba
+    subtitle: 'Neo-Swift Contributor'
+    role: Contributor
+    image: ricardoakiokobayashi.jpg
+    github: ricardoak25
+    linkedin: ricardo-akio-kobayashi-2a860986
+    website: 'https://www.simpli.com.br/'
+    discord: 'Koba#0417'
+    countrycode: BR
+    city: 'Sao Paulo, SP'
+-
+    name: 'Ricardo Meira do Prado'
+    nickname: meira
+    subtitle: 'Neo-Sharp Contributor'
+    role: Contributor
+    image: ricardomeiraprado.jpg
+    github: lock9
+    linkedin: ricardo-prado9
+    website: 'https://www.simpli.com.br/'
+    discord: 'ricklock#4529'
+    countrycode: BR
+    city: 'Sao Paulo, SP'
