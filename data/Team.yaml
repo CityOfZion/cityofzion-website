@@ -298,18 +298,6 @@
     countrycode: JP
     city: Osaka
 -
-    name: 'Andrei Terentiev'
-    nickname: andreit_O3
-    subtitle: 'Neo-Swift, O3 Wallet'
-    role: Contributor
-    image: andreiterentiev.jpg
-    github: saltyskip
-    twitter: O3_Labs
-    discord: 'andreit_O3#9620'
-    website: 'https://o3.network/'
-    countrycode: JP
-    city: Tokyo
--
     name: 'Apisit Toompakdee'
     nickname: apisit
     subtitle: Developer
