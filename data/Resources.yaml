@@ -5,11 +5,17 @@
   icon: "fa-reddit-alien"
 
 - name: "Discord"
-  url: "https://discordapp.com/invite/b8QNXwD"
+  url: "https://discordapp.com/invite/R8v48YA"
   head: "Join"
   subtitle: "Our Discord Channel"
   icon: "fa-discord"
 
+- name: "Slack"
+  url: "https://join.slack.com/t/cityofzion/shared_invite/enQtMjcwOTUxNDc1ODU5LWU5ODBlYjhjMDNmNTE3ZDVhOTMzZDA5ODczMmEyMWNhNTdjOTFlM2Y1ZDVkYjM0NGU0OWFlNGVhOWY3ZTEzZTI"
+  head: "Join"
+  subtitle: "Slack Channel"
+  icon: "fa-slack"
+  
 - name: "Github"
   url: "https://github.com/CityOfZion"
   head: "Fork"
