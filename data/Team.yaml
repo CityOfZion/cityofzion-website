@@ -115,15 +115,6 @@
     countrycode: US
     city: 'Cleveland, OH'
 -
-    name: Steffel
-    nickname: Stef
-    subtitle: 'NeoChat dev'
-    role: Contributor
-    image: steffel.jpg
-    github: steffenix
-    linkedin: steffenix
-    discord: 'steffenix#1182'
--
     name: 'Nikolaj Kuntner'
     nickname: Nikolaj-K
     subtitle: 'Gentleman Scientist'
