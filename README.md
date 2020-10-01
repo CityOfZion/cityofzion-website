@@ -39,7 +39,7 @@ hugo server -D
 ```
 
 Then you can visit the generated site at http://localhost:1313. As soon as source
-files change, hugo builds and reloads the page.
+files changes, hugo builds and reloads the page.
 
 
 ### Production builds and Gulp tasks
