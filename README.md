@@ -17,7 +17,7 @@
 	</a>
 </p>
 
-## Overview
+## Hugo-An amazing Platform
 Very simple, no JS necessary. Using [Hugo](https://gohugo.io/), a fast static website generator and [NodeJS](https://nodejs.org) for building.
 
 ## Getting started
